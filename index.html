@@ -1,0 +1,618 @@
+<!doctype html>
+<html lang="id" data-bs-theme="light">
+
+<head>
+    <!-- Common Tag -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Maria & Stefano - Wedding Website</title>
+
+    <!-- SEO Tag -->
+    <meta name="author" content="stemerlini">
+    <meta name="language" content="id">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="googlebot" content="index, follow, max-image-preview:large">
+    <meta name="title" content="Wedding website of Stefano and Maria">
+    <meta name="description" content="">
+    <meta name="keywords" content="wedding, wedding invitation">
+    <meta property="og:title" content="Wedding Website of Maria & Stefano">
+    <meta property="og:description" content="Wedding Website of Maria & Stefano">
+    <meta property="og:keywords" content="wedding, wedding invitation, m&s">
+    <meta property="og:image" content="">
+    <meta property="og:image:secure_url" content="">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:alt" content="Wedding Website of Maria & Stefano">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="id_ID">
+    <meta property="og:url" content="">
+    <meta property="og:site_name" content="Wedding Website of Maria & Stefano">
+
+    <!-- Appearance -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Wedding Website of Maria & Stefano">
+    <meta name="theme-color" content="#111111">
+    <meta name="color-scheme" content="light">
+    <link rel="canonical" href="https://ulems.my.id/">
+    <link rel="shortcut icon" type="image/x-icon" href="https://ulems.my.id/favicon.ico">
+    <link rel="apple-touch-icon" sizes="192x192" href="https://ulems.my.id/assets/images/icon-192x192.png">
+    <link rel="icon" type="image/x-icon" href="https://ulems.my.id/favicon.ico">
+
+    <!-- Preconnect CDN -->
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" crossorigin="anonymous">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" crossorigin="anonymous">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Preload Resources -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css" integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI=" crossorigin="anonymous" as="style">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha256-PI8n5gCcz9cQqQXm3PEtDuPG8qx9oFsFctPg0S5zb8g=" crossorigin="anonymous" as="style">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css" integrity="sha256-wiz7ZSCn/btzhjKDQBms9Hx4sSeUYsDrTLg7roPstac=" crossorigin="anonymous" as="style">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" integrity="sha256-GqiEX9BuR1rv5zPU5Vs2qS/NSHl1BJyBcjQYJ6ycwD4=" crossorigin="anonymous" as="style">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha256-CDOy6cOibCWEdsRiZuaHf8dSGGJRYuBGC+mjoJimHGw=" crossorigin="anonymous" as="script">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" integrity="sha256-pQBbLkFHcP1cy0C8IhoSdxlm0CtcH5yJ2ki9jjgR03c=" crossorigin="anonymous" as="script">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.js" integrity="sha256-mvTaORw+RTgKnX6ZHT4P5Sc9DNP2TBpSGII7F3sT8iE=" crossorigin="anonymous" as="script">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic&display=swap">
+
+    <!-- Dependencies CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css" integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha256-PI8n5gCcz9cQqQXm3PEtDuPG8qx9oFsFctPg0S5zb8g=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css" integrity="sha256-wiz7ZSCn/btzhjKDQBms9Hx4sSeUYsDrTLg7roPstac=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" integrity="sha256-GqiEX9BuR1rv5zPU5Vs2qS/NSHl1BJyBcjQYJ6ycwD4=" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/app.css">
+</head>
+
+<!-- If not using comments, you can remove the data-key and data-url attributes -->
+
+<body data-key="bfb9cfea33ab7ae21a315fbd6f065a815d3e20ff2f007aa2ca" data-url="https://api.ulems.my.id/" style="overflow-y: hidden;">
+
+    <!-- Navbar Bottom -->
+    <nav class="navbar bg-dark navbar-expand fixed-bottom rounded-top-4 border-top p-0" id="navbar-menu">
+        <ul class="navbar-nav nav-justified w-100 align-items-center">
+            <li class="nav-item">
+                <a class="nav-link" href="#home">
+                    <i class="fa-solid fa-house"></i>
+                    <span class="d-block" style="font-size: 0.7rem;">Home</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#story">
+                    <i class="fa-solid fa-user-group"></i>
+                    <span class="d-block" style="font-size: 0.7rem;">Our Story</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#wedding-date">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    <span class="d-block" style="font-size: 0.7rem;">Date</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#gallery">
+                    <i class="fa-solid fa-images"></i>
+                    <span class="d-block" style="font-size: 0.7rem;">Gallery</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#comment">
+                    <i class="fa-solid fa-comments"></i>
+                    <span class="d-block" style="font-size: 0.7rem;">Ucapan</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="bg-dark text-light" data-bs-spy="scroll" data-bs-target="#navbar-menu" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="0">
+
+        <!-- Home -->
+        <section id="home" class="position-relative overflow-hidden p-0 m-0">
+            <div class="position-relative text-center pt-4 pb-0 px-0 m-0">
+                <div class="py-4">
+                    <div class="img-crop border border-3 border-light shadow mx-auto">
+                        <img src="./assets/images/bg.png" alt="bg" onclick="util.modal(this)">
+                    </div>
+                </div>
+
+                <h2 class="font-esthetic my-4" style="font-size: 2.5rem;">Maria &amp; Stefano</h2>
+                <p class="mb-0" style="font-size: 1.25rem;">Saturday, 20 September 2024</p>
+
+                <a class="btn btn-outline-light btn-sm shadow rounded-pill px-3 my-2" target="_blank" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=The%20Wedding%20of%20Wahyu%20and%20Riski&details=The%20Wedding%20of%20Wahyu%20and%20Riski%20%7C%2015%20Maret%202023%20%7C%20RT%2010%20RW%2002,%20Desa%20Pajerukan,%20Kec.%20Kalibagor,%20Kab.%20Banyumas,%20Jawa%20Tengah%2053191%20%7C%2010.00%20-%2011.00%20WIB&dates=20230315T100000/20230315T110000&location=https://goo.gl/maps/ALZR6FJZU3kxVwN86">
+                    <i class="fa-solid fa-calendar-check me-2"></i>Save The Date
+                </a>
+
+                <div class="d-flex justify-content-center align-items-center mt-4 mb-2">
+                    <div class="mouse-animation border border-2">
+                        <div class="scroll-animation"></div>
+                    </div>
+                </div>
+
+                <p class="m-0 p-0" style="font-size: 0.95rem;">Scroll Down</p>
+            </div>
+        </section>
+
+        <!-- Wave Separator -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="color-theme-black">
+            <path fill="currentColor" fill-opacity="1" d="M0,160L48,144C96,128,192,96,288,106.7C384,117,480,171,576,165.3C672,160,768,96,864,96C960,96,1056,160,1152,154.7C1248,149,1344,75,1392,37.3L1440,0L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
+
+        <!-- Our Story -->
+        <section class="dark-section bg-black" id="story">
+            <div class="text-center">
+                <!-- Heart Animation -->
+                <div class="position-relative">
+                    <div class="position-absolute" style="top: 0%; right: 10%;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="opacity-50" onload="util.animate(this, 500, 'animate-love')" viewBox="0 0 16 16">
+                            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                        </svg>
+                    </div>
+                </div>
+                <!-- Title of Our Story Section -->
+                <h2 class="font-esthetic py-4 px-2" style="font-size: 2rem">Our Story in a 🥜-🐚</h2>
+
+                <p class="pb-3 px-3" style="font-size: 0.95rem;"> </p>
+
+                <!-- Love animation -->
+                <div class="position-relative">
+                    <div class="position-absolute" style="top: 0%; left: 10%;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="opacity-50" onload="util.animate(this, 2000, 'animate-love')" viewBox="0 0 16 16">
+                            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="overflow-x-hidden">
+
+                    <div data-aos="fade-right" data-aos-duration="2000">
+                        
+                        <div class="img-crop border border-3 border-light shadow my-4 mx-auto">
+                            <img src="./assets/images/cowo.png" alt="cowo" onclick="util.modal(this)">
+                        </div>
+
+                        <h2 class="font-esthetic" style="font-size: 2.5rem;"></h2>
+                        <p class="mt-3 mb-0" style="font-size: 1.25rem;">Putra</p>
+                        <p class="mb-0">Bapak ... &amp; Ibu ...</p>
+                        
+                    </div>
+
+                    <!-- Love animation -->
+                    <div class="position-relative">
+                        <div class="position-absolute" style="top: 0%; right: 10%;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="opacity-50" onload="util.animate(this, 3000, 'animate-love')" viewBox="0 0 16 16">
+                                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <h2 class="font-esthetic my-4" style="font-size: 4rem;">&</h2>
+
+                    <!-- Love animation -->
+                    <div class="position-relative">
+                        <div class="position-absolute" style="top: 0%; left: 10%;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="opacity-50" onload="util.animate(this, 2000, 'animate-love')" viewBox="0 0 16 16">
+                                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div data-aos="fade-left" data-aos-duration="2000">
+                        <div class="img-crop border border-3 border-light shadow my-4 mx-auto">
+                            <img src="./assets/images/cewe.png" alt="cewe" onclick="util.modal(this)">
+                        </div>
+                        <h2 class="font-esthetic" style="font-size: 2.5rem;">Riski Siapa</h2>
+                        <p class="mt-3 mb-0" style="font-size: 1.25rem;">Putri</p>
+                        <p class="mb-0">Bapak ... &amp; Ibu ...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ballon animation -->
+        <div class="position-relative">
+            <div class="position-absolute" style="top: 0%; right: 5%;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="opacity-50" onload="util.animate(this, 1500, 'animate-love')" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063q.068.062.132.129.065-.067.132-.129c3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3 3 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398"></path>
+                </svg>
+            </div>
+        </div>
+        
+
+        <!-- Wave Separator -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="color-theme-black">
+            <path fill="currentColor" fill-opacity="1" d="M0,192L40,181.3C80,171,160,149,240,149.3C320,149,400,171,480,165.3C560,160,640,128,720,128C800,128,880,160,960,186.7C1040,213,1120,235,1200,218.7C1280,203,1360,149,1400,122.7L1440,96L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path>
+        </svg>
+
+        <!-- Invitation Text -->
+        <div class="container">
+            <div class="text-center" data-aos="fade-up" data-aos-duration="2000">
+
+                <h2 class="font-esthetic mt-0 mb-3" style="font-size: 2rem">Invitation title</h2>
+
+                <p class="px-2" style="font-size: 0.95rem;">
+                    Some text, location and a brief description of the event....
+                </p>
+
+                <p class="m-0 p-0 fw-bold"> --Maria & Stefano</p>
+            </div>
+        </div>
+
+        <!-- Ballon animation -->
+        <div class="position-relative">
+            <div class="position-absolute" style="top: 0%; left: 5%;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="opacity-50" onload="util.animate(this, 4000, 'animate-love')" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063q.068.062.132.129.065-.067.132-.129c3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3 3 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398"></path>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Wave Separator -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="color-theme-black">
+            <path fill="currentColor" fill-opacity="1" d="M0,96L30,106.7C60,117,120,139,180,154.7C240,171,300,181,360,186.7C420,192,480,192,540,181.3C600,171,660,149,720,154.7C780,160,840,192,900,208C960,224,1020,224,1080,208C1140,192,1200,160,1260,138.7C1320,117,1380,107,1410,101.3L1440,96L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path>
+        </svg>
+
+        <!-- Wedding Date -->
+        <section class="dark-section bg-black" id="wedding-date">
+
+            <div class="container">
+                <div class="text-center">
+
+                    <h2 class="font-esthetic py-3" style="font-size: 2rem;">Days left before the party 🎉</h2>
+
+                    <div class="border rounded-pill shadow py-2 px-4 mx-2 mb-4">
+                        <!-- Ganti waktunya pada data-waktu (sesuai format tersebut) -->
+                        <div class="row justify-content-center" data-time="2025-09-20 20:00:00" id="count-down">
+                            <div class="col-3 p-1">
+                                <h2 class="d-inline m-0 p-0" id="day">0</h2><small class="ms-1 me-0 my-0 p-0 d-inline">Day</small>
+                            </div>
+                            <div class="col-3 p-1">
+                                <h2 class="d-inline m-0 p-0" id="hour">0</h2><small class="ms-1 me-0 my-0 p-0 d-inline">Hour</small>
+                            </div>
+                            <div class="col-3 p-1">
+                                <h2 class="d-inline m-0 p-0" id="minute">0</h2><small class="ms-1 me-0 my-0 p-0 d-inline">Minutes</small>
+                            </div>
+                            <div class="col-3 p-1">
+                                <h2 class="d-inline m-0 p-0" id="second">0</h2><small class="ms-1 me-0 my-0 p-0 d-inline">Seconds</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="mt-4 py-2" style="font-size: 0.95rem;"></p>
+
+                    <!-- Love animation -->
+                    <div class="position-relative">
+                        <div class="position-absolute" style="top: 0%; right: 10%;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="opacity-50" onload="util.animate(this, 3000, 'animate-love')" viewBox="0 0 16 16">
+                                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="overflow-x-hidden">
+                        <h2 class="font-esthetic mt-0 mb-3" style="font-size: 2rem">🎈 The Plan:</h2>
+
+                        <div class="py-2" data-aos="fade-right" data-aos-duration="1500">
+                            <h2 class="font-esthetic" style="font-size: 2rem;">We do 💍</h2>
+                            <p style="font-size: 0.95rem;">19.30 - Cerimony</p>
+                        </div>
+
+                        <div class="py-2" data-aos="fade-left" data-aos-duration="1500">
+                            <h2 class="font-esthetic" style="font-size: 2rem;">We eat 🍽️</h2>
+                            <p style="font-size: 0.95rem;">20.30 - Bla Bla & Dinner</p>
+                        </div>
+
+                        <div class="py-2" data-aos="fade-left" data-aos-duration="1500">
+                            <h2 class="font-esthetic" style="font-size: 2rem;">We party 🥳</h2>
+                            <p style="font-size: 0.95rem;">22.30 - Drinks & Dancing</p>
+                        </div>
+
+                    </div>
+
+                    <div class="py-2" data-aos="fade-up" data-aos-duration="1500">
+                        <a href="https://www.google.com/maps/place/Κτήμα+Μυρωνίδη/@40.528609,23.003338,1465m/data=!3m1!1e3!4m6!3m5!1s0x14a84075a616ff55:0x18aa25836a06ba55!8m2!3d40.5286091!4d23.0033382!16s%2Fg%2F11bv1xhvkn?hl=en&entry=ttu&g_ep=EgoyMDI0MDkyNS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn btn-outline-light btn-sm rounded-pill shadow mb-2 px-3"><i class="fa-solid fa-map-location-dot me-2"></i>Get Directions</a>
+                        <p class="mb-0 mt-1 mx-1 pb-4" style="font-size: 0.95rem;">Πατριαρχικό Θέρμης Θέση: Τρίμηνα, Thermi 570 01, Greece</p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3032.587438685317!2d23.003338199999998!3d40.5286091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a84075a616ff55%3A0x18aa25836a06ba55!2zzprPhM6uzrzOsSDOnM-Fz4HPic69zq_OtM63!5e0!3m2!1sen!2suk!4v1727548643823!5m2!1sen!2suk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                    <!-- Love animation -->
+                    <div class="position-relative">
+                        <div class="position-absolute" style="top: 0%; left: 10%;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="opacity-50" onload="util.animate(this, 2000, 'animate-love')" viewBox="0 0 16 16">
+                                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery -->
+        <section class="dark-section bg-black" id="gallery">
+            <div class="container pb-5 pt-4">
+                <div class="card-body border rounded-5 shadow p-3">
+
+                    <h2 class="font-esthetic text-center py-3" data-aos="fade-down" data-aos-duration="1500" style="font-size: 2.5rem;">Gallery</h2>
+
+                    <div id="carousel-image-one" data-aos="fade-up" data-aos-duration="1500" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carousel-image-one" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carousel-image-one" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carousel-image-one" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+
+                        <div class="carousel-inner rounded-4">
+                            <div class="carousel-item active">
+                                <img src="https://picsum.photos/1280/720?random=1" alt="image 1" class="d-block w-100" onclick="util.modal(this)">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://picsum.photos/1280/720?random=2" alt="image 2" class="d-block w-100" onclick="util.modal(this)">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://picsum.photos/1280/720?random=3" alt="image 3" class="d-block w-100" onclick="util.modal(this)">
+                            </div>
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-image-one" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel-image-one" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                    <div id="carousel-image-two" data-aos="fade-up" data-aos-duration="1500" class="carousel slide mt-4" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carousel-image-two" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carousel-image-two" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carousel-image-two" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+
+                        <div class="carousel-inner rounded-4">
+                            <div class="carousel-item active">
+                                <img src="https://picsum.photos/1280/720?random=4" alt="image 4" class="d-block w-100" onclick="util.modal(this)">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://picsum.photos/1280/720?random=5" alt="image 5" class="d-block w-100" onclick="util.modal(this)">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://picsum.photos/1280/720?random=6" alt="image 6" class="d-block w-100" onclick="util.modal(this)">
+                            </div>
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-image-two" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel-image-two" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wave Separator -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="color-theme-black">
+            <path fill="currentColor" fill-opacity="1" d="M0,96L30,106.7C60,117,120,139,180,154.7C240,171,300,181,360,186.7C420,192,480,192,540,181.3C600,171,660,149,720,154.7C780,160,840,192,900,208C960,224,1020,224,1080,208C1140,192,1200,160,1260,138.7C1320,117,1380,107,1410,101.3L1440,96L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"></path>
+        </svg>
+
+        <!-- Love Gift -->
+        <div class="container">
+            <div class="pb-2">
+                <div class="text-center">
+
+                    <h2 class="font-esthetic mt-0 mb-3" style="font-size: 2.5rem;">Gift? Don't Panic!</h2>
+                    <p class="mb-3" style="font-size: 0.95rem;"> Our biggest gift is your presence in our special day. However if you really want to contribute to our honey moon trip! ✈️</p>
+                    <p class="mb-3" style="font-size: 0.95rem;"> Here's are few options:</p>
+                    <div class="overflow-x-hidden">
+                        <div class="row row-cols-2">
+
+                            <div class="col card-body border rounded-4 shadow p-4 mx-4 mt-2 mb-4 text-start" data-aos="fade-down" data-aos-duration="1500">
+                                <img src="https://www.svgrepo.com/show/504810/revolut.svg" class="img-fluid w-25" alt="bca">
+                                <div class="d-flex justify-content-between align-items-center mt-2">
+                                    <p class="m-0 p-0" style="font-size: 0.95rem;">1234 5678 9101 112</p>
+                                    <!-- Bank Acount revolut -->
+                                    <button class="btn btn-outline-dark btn-sm rounded-4" data-copy="123456789101112" onclick="util.copy(this, 'Tersalin')"><i class="fa-solid fa-copy me-1"></i>Copy</button>
+                                </div>
+                                <p class="mt-2 mb-0 p-0" style="font-size: 0.95rem;">Maria Slimpa</p>
+                            </div>
+
+                            <div class="col card-body border rounded-4 shadow p-4 mx-4 mt-2 mb-4 text-start" data-aos="fade-down" data-aos-duration="1500">
+                                <img src="https://downloadr2.apkmirror.com/wp-content/uploads/2021/09/13/6133a52d7d2be.png" class="img-fluid w-25" alt="bni">
+
+                                <div class="d-flex justify-content-between align-items-center mt-2">
+                                    <p class="m-0 p-0" style="font-size: 0.95rem;">1234 5678 9101 112</p>
+                                    <!-- Ubah juga data-copy sesuai dengan no rekening -->
+                                    <button class="btn btn-outline-dark btn-sm rounded-4" data-copy="123456789101112" onclick="util.copy(this, 'Tersalin')"><i class="fa-solid fa-copy me-1"></i>Copy</button>
+                                </div>
+                                <p class="mt-2 mb-0 p-0" style="font-size: 0.95rem;">Stefano Merlini</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Comment -->
+        <section class="m-0 px-0 pb-0 pt-2" id="comment">
+            <div class="container">
+
+                <div class="card-body border rounded-4 shadow p-3">
+                    <h2 class="font-esthetic text-center mb-3" style="font-size: 2.5rem;">Ucapan &amp; Doa</h2>
+
+                    <div class="mb-3">
+                        <label for="form-name" class="form-label"><i class="fa-solid fa-person me-1"></i>Nama</label>
+                        <input type="text" class="form-control shadow-sm rounded-4" id="form-name" placeholder="Isikan Nama Anda">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="form-presence" class="form-label"><i class="fa-solid fa-person-circle-question me-1"></i>Presensi</label>
+                        <select class="form-select shadow-sm rounded-4" id="form-presence">
+                            <option value="0" selected>Konfirmasi Presensi</option>
+                            <option value="1">Datang</option>
+                            <option value="2">Berhalangan</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <div id="information" class="alert alert-info alert-dismissible fade show rounded-4" role="alert">
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" onclick="util.close()"></button>
+
+                            <p style="font-size: 1.5rem;">Bestieee!!!</p>
+                            <p class="m-0">Cobain like seperti Instagram, dengan tap tap bagian komentarnya</p>
+                            <hr class="my-2">
+                            <p class="m-0">Sama bisa format text seperti Whatsapp lohh... cobainn jugaaa, makaciwww bestieee</p>
+                        </div>
+
+                        <label for="form-comment" class="form-label"><i class="fa-solid fa-comment me-1"></i>Ucapan &amp; Doa</label>
+                        <textarea class="form-control shadow-sm rounded-4" id="form-comment" rows="4" placeholder="Tulis Ucapan dan Doa"></textarea>
+                    </div>
+
+                    <div class="d-grid">
+                        <button class="btn btn-primary btn-sm rounded-4 shadow m-1" onclick="comment.send(this)">
+                            <i class="fa-solid fa-paper-plane me-1"></i>Send
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Comments -->
+                <div class="my-3 pt-3" id="comments" data-loading="false"></div>
+
+                <!-- Pagination -->
+                <nav class="d-flex justify-content-center mb-0 pt-2">
+                    <ul class="pagination mb-0">
+                        <li class="page-item disabled" id="previous">
+                            <button class="page-link rounded-start-4" onclick="pagination.previous(this)">
+                                <i class="fa-solid fa-circle-left me-1"></i>Prev
+                            </button>
+                        </li>
+                        <li class="page-item disabled">
+                            <span class="page-link text-light" id="page">1</span>
+                        </li>
+                        <li class="page-item" id="next">
+                            <button class="page-link rounded-end-4" onclick="pagination.next(this)">
+                                Next<i class="fa-solid fa-circle-right ms-1"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Wave Separator -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="color-theme-black">
+            <path fill="currentColor" fill-opacity="1" d="M0,224L34.3,234.7C68.6,245,137,267,206,266.7C274.3,267,343,245,411,234.7C480,224,549,224,617,213.3C685.7,203,754,181,823,197.3C891.4,213,960,267,1029,266.7C1097.1,267,1166,213,1234,192C1302.9,171,1371,181,1406,186.7L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path>
+        </svg>
+
+        <!-- End Of Invitation -->
+        <section class="dark-section bg-black pb-5">
+            <div class="container">
+                <div class="text-center">
+                    <p class="pt-2 pb-1 px-2" style="font-size: 0.95rem;">
+                        Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan untuk memberikan do'a restunya. Kami ucapkan terima kasih.
+                    </p>
+
+                    <h2 class="font-esthetic" style="font-size: 2rem;">Wassalamualaikum Warahmatullahi Wabarakatuh</h2>
+                    <h2 class="font-arabic pt-4 px-2" style="font-size: 2rem;">اَلْحَمْدُ لِلّٰهِ رَبِّ الْعٰلَمِيْنَۙ</h2>
+
+                    <hr class="mt-3 mb-2">
+
+                    <div class="row align-items-center justify-content-between flex-column flex-sm-row pb-3">
+                        <div class="col-auto">
+                            <small class="text-light">
+                                Build with<i class="fa-solid fa-heart mx-1"></i>Dewanakl
+                            </small>
+                        </div>
+                        <div class="col-auto">
+                            <small>
+                                <i class="fa-brands fa-github me-1"></i><a target="_blank" href="https://github.com/dewanakl/undangan">dewanakl</a>
+                            </small>
+                            <small>
+                                <i class="fa-brands fa-youtube me-1"></i><a target="_blank" href="https://www.youtube.com/watch?v=1WCIrw85zbQ">I Wanna Grow Old with You</a>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Welcome Page -->
+    <div class="loading-page bg-black" id="welcome" style="opacity: 1;">
+        <div class="d-flex justify-content-center align-items-center" style="height: 100vh !important;">
+            <div class="text-center">
+                <h2 class="font-esthetic mb-4" style="font-size: 2.5rem;">The Wedding Of</h2>
+
+                <div class="img-crop border border-3 border-light shadow mb-4 mx-auto">
+                    <img src="./assets/images/bg.png" alt="background">
+                </div>
+
+                <h2 class="font-esthetic my-4" style="font-size: 2.5rem;">Maria &amp; Stefano</h2>
+                <div id="guest-name" data-message=""></div>
+
+                <button type="button" class="btn btn-light shadow rounded-4 mt-4" onclick="guest.open(this)">
+                    <i class="fa-solid fa-envelope-open me-2"></i>Open Invitation
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Theme Button -->
+    <button type="button" id="button-theme" style="display: none;" class="btn bg-dark border border-2 btn-sm rounded-circle btn-theme" onclick="theme.change()">
+        <i class="fa-solid fa-circle-half-stroke"></i>
+    </button>
+
+    <!-- Audio Button -->
+    <button type="button" id="button-music" style="display: none;" class="btn bg-dark border border-2 btn-sm rounded-circle btn-music" onclick="audio.button(this)" data-url="./assets/music/sound.mp3">
+        <i class="fa-solid fa-circle-pause spin-button"></i>
+    </button>
+
+    <!-- Language button -->
+     
+
+    <!-- Loading Page -->
+    <div class="loading-page bg-black" id="loading" style="opacity: 1;">
+        <div class="d-flex justify-content-center align-items-center" style="height: 100vh !important;">
+            <div class="w-75 text-center">
+                <img class="img-fluid mb-3" src="./assets/images/icon-192x192.png" alt="icon" style="width: 3.5rem;">
+                <div class="progress" role="progressbar" style="height: 0.5rem;">
+                    <div class="progress-bar" id="progress-bar" style="width: 0%"></div>
+                </div>
+                <small class="mt-1 text-light" id="progress-info" style="display: none;">Loading</small>
+                <noscript>
+                    <small class="mt-1 text-danger">Sorry, this invitation requires javascript to work</small>
+                </noscript>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Image -->
+    <div class="modal fade" id="modal-image" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content rounded-4">
+                <div class="modal-body p-0">
+                    <div class="d-flex justify-content-center align-items-center" style="height: 100%;">
+                        <img src="./assets/images/bg.png" class="img-fluid w-100 rounded-4" alt="image" id="show-modal-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dependencies JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha256-CDOy6cOibCWEdsRiZuaHf8dSGGJRYuBGC+mjoJimHGw=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" integrity="sha256-pQBbLkFHcP1cy0C8IhoSdxlm0CtcH5yJ2ki9jjgR03c=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.js" integrity="sha256-mvTaORw+RTgKnX6ZHT4P5Sc9DNP2TBpSGII7F3sT8iE=" crossorigin="anonymous"></script>
+    <script src="./js/app.js" type="module"></script>
+</body>
+
+</html>
