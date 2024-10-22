@@ -21,10 +21,6 @@ svg>path {
     transition: color 350ms ease;
 }
 
-canvas {
-    display: block;
-  }
-
 .bg-theme-light {
     background-color: var(--bs-gray-100);
 }
