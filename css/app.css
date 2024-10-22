@@ -80,11 +80,19 @@
     mask-image: linear-gradient(to bottom, black, black, black, black, black, transparent);
 }
 
+/* Parent div to contain the canvas */
+#canvas-container {
+    border: 1px solid #000; /* Optional border to visualize the div */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Canvas settings */
 canvas {
-    width: 600px;
-    height: 200px;
     display: block;
-  }
+}
+
 /* 
 .game {
     width: 600px;

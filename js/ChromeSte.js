@@ -1,6 +1,29 @@
 const canvas = document.getElementById('game');
 const ctx = canvas.getContext('2d');
 
+const CANVAS_WIDTH = 700;  // Internal width of the canvas
+const CANVAS_HEIGHT = 250; // Internal height of the canvas
+
+// Set the canvas's internal drawing size (rendering resolution)
+canvas.width = CANVAS_WIDTH;
+canvas.height = CANVAS_HEIGHT;
+
+// Optionally, set the display size via CSS or inline styling for responsiveness
+canvas.style.width = '700px'; // Display width
+canvas.style.height = '250px'; // Display height
+
+function resizeCanvas() {
+  const aspectRatio = CANVAS_WIDTH / CANVAS_HEIGHT;
+  let width = window.innerWidth * 0.6; // e.g., 80% of window width
+  let height = width / aspectRatio;    // Maintain the aspect ratio
+
+  canvas.style.width = `${width}px`;
+  canvas.style.height = `${height}px`;
+}
+
+window.addEventListener('resize', resizeCanvas);
+resizeCanvas(); // Call it initially to set size
+
 // Variables
 let score;
 let scoreText;
@@ -11,6 +34,7 @@ let gravity;
 let obstacles = [];
 let gameSpeed;
 let keys = {};
+let targetScore = 5000
 
 // Event Listeners
 document.addEventListener('keydown', function (evt) {
@@ -20,18 +44,39 @@ document.addEventListener('keyup', function (evt) {
   keys[evt.code] = false;
 });
 
+// Load the trophy image
+const trophyImage = new Image();
+trophyImage.src = '../assets/images/trex.png'; // Add the path to your trophy image
+
+// Function to draw the trophy on the right-hand side
+function drawTrophy(opacity) {
+  const trophyWidth = 110;
+  const trophyHeight = 140;
+  const trophyX = CANVAS_WIDTH - trophyWidth - 20;  // Position at the right-hand side
+  const trophyY = CANVAS_HEIGHT + trophyHeight + 40; // Position near the bottom
+  // Set the transparency based on the opacity value
+  ctx.globalAlpha = opacity;
+  ctx.drawImage(trophyImage, trophyX, trophyY, trophyWidth, trophyHeight);
+  // Reset globalAlpha to 1 for other elements
+  ctx.globalAlpha = 1;
+}
+
 class Player {
-  constructor (x, y, w, h, c) {
+  constructor(x, y, w, h) {
     this.x = x;
     this.y = y;
     this.w = w;
     this.h = h;
-    this.c = c;
 
+    // Image-related properties
+    this.image = new Image();
+    this.image.src = "../assets/images/trex.png"; // The path to your T-rex image
+
+    // Physics properties
     this.dy = 0;
     this.jumpForce = 15;
     this.originalHeight = h;
-    this.grounded = false;
+    this.grounded = true;
     this.jumpTimer = 0;
   }
 
@@ -74,21 +119,21 @@ class Player {
     }
   }
 
-  Draw () {
-    ctx.beginPath();
-    ctx.fillStyle = this.c;
-    ctx.fillRect(this.x, this.y, this.w, this.h);
-    ctx.closePath();
+  Draw() {
+    ctx.drawImage(this.image, this.x, this.y, this.w, this.h);
   }
 }
 
 class Obstacle {
-  constructor (x, y, w, h, c) {
+  constructor (x, y, w, h) {
     this.x = x;
     this.y = y;
     this.w = w;
     this.h = h;
-    this.c = c;
+
+    // Image-related properties
+    this.image = new Image();
+    this.image.src = "../assets/images/cactus.png"; // The path to your cactus image
 
     this.dx = -gameSpeed;
   }
@@ -100,10 +145,7 @@ class Obstacle {
   }
 
   Draw () {
-    ctx.beginPath();
-    ctx.fillStyle = this.c;
-    ctx.fillRect(this.x, this.y, this.w, this.h);
-    ctx.closePath();
+    ctx.drawImage(this.image, this.x, this.y, this.w, this.h)
   }
 }
 
@@ -129,9 +171,9 @@ class Text {
 
 // Game Functions
 function SpawnObstacle () {
-  let size = RandomIntInRange(20, 70);
+  let size = RandomIntInRange(70, 100);
   let type = RandomIntInRange(0, 1);
-  let obstacle = new Obstacle(canvas.width + size, canvas.height - size, size, size, '#2484E4');
+  let obstacle = new Obstacle(canvas.width + size, canvas.height - size, size, size);
 
   if (type == 1) {
     obstacle.y -= player.originalHeight - 10;
@@ -159,10 +201,9 @@ function Start () {
     highscore = localStorage.getItem('highscore');
   }
 
-  player = new Player(25, 0, 50, 50, '#FF5858');
-
-  scoreText = new Text("Score: " + score, 25, 25, "left", "#212121", "20");
-  highscoreText = new Text("Highscore: " + highscore, canvas.width - 25, 25, "right", "#212121", "20");
+  player = new Player(25, 0, 110, 140);
+  scoreText = new Text("Score: " + score, 25, 40, "left", "#212121", "40");
+  highscoreText = new Text("Highscore: " + highscore, canvas.width - 25, 40, "right", "#212121", "40");
 
   requestAnimationFrame(Update);
 }
@@ -221,7 +262,16 @@ function Update () {
   
   highscoreText.Draw();
 
-  gameSpeed += 0.003;
+  gameSpeed += 0.006;
+
+  // Check if the score is high enough to display the trophy
+  if (score >= targetScore) {
+    drawTrophy(1); // Full opacity at target score or higher
+  } else {
+    // Calculate trophy transparency based on the score
+    const opacity = score / targetScore; // Opacity increases as score approaches targetScore
+    drawTrophy(opacity);
+  }
 }
 
 Start();
