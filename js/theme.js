@@ -1,7 +1,7 @@
 import { storage } from './storage.js';
 
-export const THEME_DARK = 'dark';
-export const THEME_LIGHT = 'light';
+export const THEME_DARK = 'light';
+export const THEME_LIGHT = 'black';
 export const THEME_BS_DATA = 'data-bs-theme';
 
 export const theme = (() => {
