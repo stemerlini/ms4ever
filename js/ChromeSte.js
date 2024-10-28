@@ -34,7 +34,7 @@ let gravity;
 let obstacles = [];
 let gameSpeed;
 let keys = {};
-let targetScore = 5000
+let targetScore = 1000
 
 // Event Listeners
 document.addEventListener('keydown', function (evt) {
@@ -52,8 +52,8 @@ trophyImage.src = '../assets/images/trex.png'; // Add the path to your trophy im
 function drawTrophy(opacity) {
   const trophyWidth = 110;
   const trophyHeight = 140;
-  const trophyX = CANVAS_WIDTH - trophyWidth - 20;  // Position at the right-hand side
-  const trophyY = CANVAS_HEIGHT + trophyHeight + 40; // Position near the bottom
+  const trophyX = canvas.width - trophyWidth;  // Position at the right-hand side
+  const trophyY = canvas.height - trophyHeight; // Position near the bottom
   // Set the transparency based on the opacity value
   ctx.globalAlpha = opacity;
   ctx.drawImage(trophyImage, trophyX, trophyY, trophyWidth, trophyHeight);
@@ -62,8 +62,8 @@ function drawTrophy(opacity) {
 }
 
 class Player {
-  constructor(x, y, w, h) {
-    this.x = x;
+  constructor(initialX, y, w, h) {
+    this.initialX = initialX; // Initial starting position
     this.y = y;
     this.w = w;
     this.h = h;
@@ -78,6 +78,13 @@ class Player {
     this.originalHeight = h;
     this.grounded = true;
     this.jumpTimer = 0;
+  }
+
+  // Calculate the player's x position based on score
+  get x() {
+    // Calculate position as score approaches the target
+    const maxDistance = canvas.width - this.w; // Stop before hitting the right edge
+    return this.initialX + (maxDistance - this.initialX) * Math.min(score / targetScore, 1);
   }
 
   Animate () {
@@ -208,7 +215,7 @@ function Start () {
   requestAnimationFrame(Update);
 }
 
-let initialSpawnTimer = 200;
+let initialSpawnTimer = 100;
 let spawnTimer = initialSpawnTimer;
 function Update () {
   requestAnimationFrame(Update);
