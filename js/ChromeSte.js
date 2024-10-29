@@ -4,6 +4,8 @@ const ctx = canvas.getContext('2d');
 const CANVAS_WIDTH = 700;  // Internal width of the canvas
 const CANVAS_HEIGHT = 250; // Internal height of the canvas
 
+gameActive = true; // Stop the game loop
+
 // Set the canvas's internal drawing size (rendering resolution)
 canvas.width = CANVAS_WIDTH;
 canvas.height = CANVAS_HEIGHT;
@@ -34,7 +36,7 @@ let gravity;
 let obstacles = [];
 let gameSpeed;
 let keys = {};
-let targetScore = 1000
+let targetScore = 2000
 
 // Event Listeners
 document.addEventListener('keydown', function (evt) {
@@ -185,9 +187,11 @@ function SpawnObstacle () {
   if (type == 1) {
     obstacle.y -= player.originalHeight - 10;
   }
-  obstacles.push(obstacle);
+  if (score < targetScore * 0.9) { 
+    // Spawn obstacles until the score is close to the target
+    obstacles.push(obstacle);
+  }
 }
-
 
 function RandomIntInRange (min, max) {
   return Math.round(Math.random() * (max - min) + min);
@@ -204,6 +208,7 @@ function Start () {
 
   score = 0;
   highscore = 0;
+
   if (localStorage.getItem('highscore')) {
     highscore = localStorage.getItem('highscore');
   }
@@ -215,18 +220,20 @@ function Start () {
   requestAnimationFrame(Update);
 }
 
-let initialSpawnTimer = 100;
+let initialSpawnTimer = 150;
 let spawnTimer = initialSpawnTimer;
-function Update () {
-  requestAnimationFrame(Update);
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
 
+function Update () {
+  if (!gameActive) return; // Stop updating if the game is inactive
+
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
   spawnTimer--;
+
   if (spawnTimer <= 0) {
     SpawnObstacle();
     console.log(obstacles);
     spawnTimer = initialSpawnTimer - gameSpeed * 8;
-    
+
     if (spawnTimer < 60) {
       spawnTimer = 60;
     }
@@ -269,16 +276,26 @@ function Update () {
   
   highscoreText.Draw();
 
-  gameSpeed += 0.006;
-
   // Check if the score is high enough to display the trophy
   if (score >= targetScore) {
     drawTrophy(1); // Full opacity at target score or higher
+    endGame("You Win!");
   } else {
     // Calculate trophy transparency based on the score
-    const opacity = score / targetScore; // Opacity increases as score approaches targetScore
+    const opacity = score / targetScore;
     drawTrophy(opacity);
   }
+
+  gameSpeed += 0.006;
+  if (gameActive) requestAnimationFrame(Update);
+}
+
+// Function to end the game
+function endGame(message) {
+  gameActive = false; // Stop the game loop
+  ctx.font = '30px Arial';
+  ctx.fillStyle = 'green';
+  ctx.fillText(message, CANVAS_WIDTH / 2 - 60, CANVAS_HEIGHT / 2); // Display message in the center
 }
 
 Start();
