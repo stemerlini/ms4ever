@@ -1,5 +1,4 @@
 import { util } from './util.js';
-import { audio } from './audio.js';
 import { theme } from './theme.js';
 import { session } from './session.js';
 import { storage } from './storage.js';
@@ -92,11 +91,8 @@ export const guest = (() => {
         document.body.scrollIntoView({ behavior: 'instant' });
         util.opacity('welcome', 0.025);
 
-        audio.play();
-        audio.showButton();
-
-        theme.showButtonChangeTheme();
-        setTimeout(animation, 1500);
+        // theme.showButtonChangeTheme();
+        // setTimeout(animation, 1500);
     };
 
     const init = () => {

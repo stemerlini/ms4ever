@@ -125,7 +125,7 @@ export const theme = (() => {
             theme.set('active', THEME_LIGHT);
 
             if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                theme.set('active', THEME_DARK);
+                theme.set('active', THEME_LIGHT);
             }
         }
 

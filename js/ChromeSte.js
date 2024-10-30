@@ -1,5 +1,6 @@
 const canvas = document.getElementById('game');
 const ctx = canvas.getContext('2d');
+localStorage.clear();
 
 const CANVAS_WIDTH = 700;  // Internal width of the canvas
 const CANVAS_HEIGHT = 250; // Internal height of the canvas
@@ -36,7 +37,7 @@ let gravity;
 let obstacles = [];
 let gameSpeed;
 let keys = {};
-let targetScore = 2000
+let targetScore = 1000
 
 // Event Listeners
 document.addEventListener('keydown', function (evt) {
@@ -182,12 +183,13 @@ class Text {
 function SpawnObstacle () {
   let size = RandomIntInRange(70, 100);
   let type = RandomIntInRange(0, 1);
-  let obstacle = new Obstacle(canvas.width + size, canvas.height - size, size, size);
+  const trophyX = canvas.width - 110; // Position at the right-hand side of the canvas
+  let obstacle = new Obstacle(trophyX - size, canvas.height - size, size, size);
 
   if (type == 1) {
     obstacle.y -= player.originalHeight - 10;
   }
-  if (score < targetScore * 0.9) { 
+  if (player.x < canvas.width * 0.75) { 
     // Spawn obstacles until the score is close to the target
     obstacles.push(obstacle);
   }
@@ -214,8 +216,8 @@ function Start () {
   }
 
   player = new Player(25, 0, 110, 140);
-  scoreText = new Text("Score: " + score, 25, 40, "left", "#212121", "40");
-  highscoreText = new Text("Highscore: " + highscore, canvas.width - 25, 40, "right", "#212121", "40");
+  scoreText = new Text("Score: " + score, 25, 50, "left", "#212121", "40");
+  highscoreText = new Text("Highscore: " + highscore, canvas.width - 25,  50, "right", "#212121", "40");
 
   requestAnimationFrame(Update);
 }
@@ -276,8 +278,9 @@ function Update () {
   
   highscoreText.Draw();
 
+  const trophyX = canvas.width - 2*110; // Trophy's position on the canvas
   // Check if the score is high enough to display the trophy
-  if (score >= targetScore) {
+  if (player.x >= trophyX) {
     drawTrophy(1); // Full opacity at target score or higher
     endGame("You Win!");
   } else {
@@ -295,7 +298,7 @@ function endGame(message) {
   gameActive = false; // Stop the game loop
   ctx.font = '30px Arial';
   ctx.fillStyle = 'green';
-  ctx.fillText(message, CANVAS_WIDTH / 2 - 60, CANVAS_HEIGHT / 2); // Display message in the center
+  ctx.fillText(message, canvas.width / 2, canvas.height / 2); // Display message in the center
 }
 
 Start();
