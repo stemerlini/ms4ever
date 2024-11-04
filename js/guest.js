@@ -1,5 +1,4 @@
 import { util } from './util.js';
-import { theme } from './theme.js';
 import { session } from './session.js';
 import { storage } from './storage.js';
 import { confetti } from './confetti.js';

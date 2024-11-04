@@ -140,11 +140,14 @@ class Obstacle {
     this.y = y;
     this.w = w;
     this.h = h;
-
+    this.type = RandomIntInRange(1, 7);
     // Image-related properties
     this.image = new Image();
-    this.image.src = "../assets/images/cactus.png"; // The path to your cactus image
-
+    this.image.src = `../assets/images/obstacle_${this.type}.png`; // The path to your cactus image
+    this.image.onload = () => {
+      // This ensures the image is drawn only after it's loaded
+      this.ready = true;
+    };
     this.dx = -gameSpeed;
   }
 
@@ -155,7 +158,9 @@ class Obstacle {
   }
 
   Draw () {
-    ctx.drawImage(this.image, this.x, this.y, this.w, this.h)
+    if (this.ready) {
+      ctx.drawImage(this.image, this.x, this.y, this.w, this.h)
+    }
   }
 }
 
@@ -181,7 +186,7 @@ class Text {
 
 // Game Functions
 function SpawnObstacle () {
-  let size = RandomIntInRange(70, 100);
+  let size = RandomIntInRange(60, 80);
   let type = RandomIntInRange(0, 1);
   const trophyX = canvas.width - 110; // Position at the right-hand side of the canvas
   let obstacle = new Obstacle(trophyX - size, canvas.height - size, size, size);
@@ -189,7 +194,7 @@ function SpawnObstacle () {
   if (type == 1) {
     obstacle.y -= player.originalHeight - 10;
   }
-  if (player.x < canvas.width * 0.75) { 
+  if (player.x < canvas.width * 0.7) { 
     // Spawn obstacles until the score is close to the target
     obstacles.push(obstacle);
   }
@@ -234,7 +239,7 @@ function Update () {
   if (spawnTimer <= 0) {
     SpawnObstacle();
     console.log(obstacles);
-    spawnTimer = initialSpawnTimer - gameSpeed * 8;
+    spawnTimer = initialSpawnTimer - gameSpeed * 4;
 
     if (spawnTimer < 60) {
       spawnTimer = 60;

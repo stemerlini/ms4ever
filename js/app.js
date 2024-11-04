@@ -9,7 +9,7 @@ import { pagination } from './pagination.js';
 document.addEventListener('DOMContentLoaded', () => {
     theme.check();
     pagination.init();
-
+    
     guest.init();
     progress.init();
     window.AOS.init();
