@@ -49,12 +49,12 @@ document.addEventListener('keyup', function (evt) {
 
 // Load the trophy image
 const trophyImage = new Image();
-trophyImage.src = '../assets/images/trex.png'; // Add the path to your trophy image
+trophyImage.src = '../assets/images/Maria.png'; // Add the path to your trophy image
 
 // Function to draw the trophy on the right-hand side
 function drawTrophy(opacity) {
-  const trophyWidth = 110;
-  const trophyHeight = 140;
+  const trophyWidth = 70;
+  const trophyHeight = 220;
   const trophyX = canvas.width - trophyWidth;  // Position at the right-hand side
   const trophyY = canvas.height - trophyHeight; // Position near the bottom
   // Set the transparency based on the opacity value
@@ -73,7 +73,7 @@ class Player {
 
     // Image-related properties
     this.image = new Image();
-    this.image.src = "../assets/images/trex.png"; // The path to your T-rex image
+    this.image.src = "../assets/images/Ste.png"; // The path to your T-rex image
 
     // Physics properties
     this.dy = 0;
@@ -220,7 +220,7 @@ function Start () {
     highscore = localStorage.getItem('highscore');
   }
 
-  player = new Player(25, 0, 110, 140);
+  player = new Player(25, 0, 70, 220);
   scoreText = new Text("Score: " + score, 25, 50, "left", "#212121", "40");
   highscoreText = new Text("Highscore: " + highscore, canvas.width - 25,  50, "right", "#212121", "40");
 
