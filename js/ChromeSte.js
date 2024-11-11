@@ -53,8 +53,8 @@ trophyImage.src = '../assets/images/Maria.png'; // Add the path to your trophy i
 
 // Function to draw the trophy on the right-hand side
 function drawTrophy(opacity) {
-  const trophyWidth = 70;
-  const trophyHeight = 220;
+  const trophyWidth = 150;
+  const trophyHeight = 264;
   const trophyX = canvas.width - trophyWidth;  // Position at the right-hand side
   const trophyY = canvas.height - trophyHeight; // Position near the bottom
   // Set the transparency based on the opacity value
@@ -186,7 +186,7 @@ class Text {
 
 // Game Functions
 function SpawnObstacle () {
-  let size = RandomIntInRange(60, 80);
+  let size = RandomIntInRange(80, 100);
   let type = RandomIntInRange(0, 1);
   const trophyX = canvas.width - 110; // Position at the right-hand side of the canvas
   let obstacle = new Obstacle(trophyX - size, canvas.height - size, size, size);
@@ -220,7 +220,7 @@ function Start () {
     highscore = localStorage.getItem('highscore');
   }
 
-  player = new Player(25, 0, 70, 220);
+  player = new Player(25, 0, 100, 283);
   scoreText = new Text("Score: " + score, 25, 50, "left", "#212121", "40");
   highscoreText = new Text("Highscore: " + highscore, canvas.width - 25,  50, "right", "#212121", "40");
 
