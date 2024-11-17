@@ -69,45 +69,11 @@ export const util = (() => {
         (new bootstrap.Modal('#modal-image')).show();
     };
 
-    const copy = async (button, message = null, timeout = 1500) => {
-        const copy = button.getAttribute('data-copy');
-
-        if (!copy || copy.length == 0) {
-            alert('Nothing to copy');
-            return;
-        }
-
-        button.disabled = true;
-
-        try {
-            await navigator.clipboard.writeText(copy);
-        } catch {
-            button.disabled = false;
-            alert('Failed to copy');
-            return;
-        }
-
-        const tmp = button.innerHTML;
-        button.innerHTML = message ? message : '<i class="fa-solid fa-check"></i>';
-
-        let clear = null;
-        clear = setTimeout(() => {
-            button.disabled = false;
-            button.innerHTML = tmp;
-
-            clearTimeout(clear);
-            clear = null;
-            return;
-        }, timeout);
-    };
-
     const close = () => {
         storage('information').set('info', true);
     };
 
     return {
-        open,
-        copy,
         close,
         modal,
         opacity,

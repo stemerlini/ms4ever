@@ -121,7 +121,12 @@
                 <h2 class="font-esthetic my-4" style="font-size: 2.5rem;">Maria &amp; Stefano</h2>
                 <p class="mb-0" style="font-size: 1.25rem;">Saturday, 20 September 2024</p>
 
-                <a class="btn btn-outline-light btn-sm shadow rounded-pill px-3 my-2" target="_blank" href="https://calendar.app.google/W8Bi9RrxhYFvJxKG8">
+                <!-- <a class="btn btn-outline-light btn-sm shadow rounded-pill px-3 my-2" target="_blank" href="https://calendar.app.google/W8Bi9RrxhYFvJxKG8">
+                    <i class="fa-solid fa-calendar-check me-2"></i>Save The Date
+                </a> -->
+                
+                <!-- RSVP -->
+                <a class="btn btn-outline-light btn-sm shadow rounded-pill px-3 my-2" data-bs-toggle="modal" data-bs-target="#rsvpModal">
                     <i class="fa-solid fa-calendar-check me-2"></i>Save The Date
                 </a>
 
@@ -328,9 +333,9 @@
                 </div>
             </div>
         </section>
-
+        
         <!-- Gallery -->
-        <section class="dark-section bg-black" id="gallery">
+        <!-- <section class="dark-section bg-black" id="gallery">
             <div class="container pb-5 pt-4">
                 <div class="card-body border rounded-5 shadow p-3">
 
@@ -397,7 +402,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <!-- Wave Separator -->
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="color-theme-black">
@@ -441,72 +446,6 @@
             </div>
         </div>
 
-        <!-- Comment -->
-        <section class="m-0 px-0 pb-0 pt-2" id="comment">
-            <div class="container">
-
-                <div class="card-body border rounded-4 shadow p-3">
-                    <h2 class="font-esthetic text-center mb-3" style="font-size: 2.5rem;">Ucapan &amp; Doa</h2>
-
-                    <div class="mb-3">
-                        <label for="form-name" class="form-label"><i class="fa-solid fa-person me-1"></i>Nama</label>
-                        <input type="text" class="form-control shadow-sm rounded-4" id="form-name" placeholder="Isikan Nama Anda">
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="form-presence" class="form-label"><i class="fa-solid fa-person-circle-question me-1"></i>Presensi</label>
-                        <select class="form-select shadow-sm rounded-4" id="form-presence">
-                            <option value="0" selected>Konfirmasi Presensi</option>
-                            <option value="1">Datang</option>
-                            <option value="2">Berhalangan</option>
-                        </select>
-                    </div>
-
-                    <div class="mb-3">
-                        <div id="information" class="alert alert-info alert-dismissible fade show rounded-4" role="alert">
-                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" onclick="util.close()"></button>
-
-                            <p style="font-size: 1.5rem;">Bestieee!!!</p>
-                            <p class="m-0">Cobain like seperti Instagram, dengan tap tap bagian komentarnya</p>
-                            <hr class="my-2">
-                            <p class="m-0">Sama bisa format text seperti Whatsapp lohh... cobainn jugaaa, makaciwww bestieee</p>
-                        </div>
-
-                        <label for="form-comment" class="form-label"><i class="fa-solid fa-comment me-1"></i>Ucapan &amp; Doa</label>
-                        <textarea class="form-control shadow-sm rounded-4" id="form-comment" rows="4" placeholder="Tulis Ucapan dan Doa"></textarea>
-                    </div>
-
-                    <div class="d-grid">
-                        <button class="btn btn-primary btn-sm rounded-4 shadow m-1" onclick="comment.send(this)">
-                            <i class="fa-solid fa-paper-plane me-1"></i>Send
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Comments -->
-                <div class="my-3 pt-3" id="comments" data-loading="false"></div>
-
-                <!-- Pagination -->
-                <nav class="d-flex justify-content-center mb-0 pt-2">
-                    <ul class="pagination mb-0">
-                        <li class="page-item disabled" id="previous">
-                            <button class="page-link rounded-start-4" onclick="pagination.previous(this)">
-                                <i class="fa-solid fa-circle-left me-1"></i>Prev
-                            </button>
-                        </li>
-                        <li class="page-item disabled">
-                            <span class="page-link text-light" id="page">1</span>
-                        </li>
-                        <li class="page-item" id="next">
-                            <button class="page-link rounded-end-4" onclick="pagination.next(this)">
-                                Next<i class="fa-solid fa-circle-right ms-1"></i>
-                            </button>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </section>
-
         <!-- Wave Separator -->
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="color-theme-black">
             <path fill="currentColor" fill-opacity="1" d="M0,224L34.3,234.7C68.6,245,137,267,206,266.7C274.3,267,343,245,411,234.7C480,224,549,224,617,213.3C685.7,203,754,181,823,197.3C891.4,213,960,267,1029,266.7C1097.1,267,1166,213,1234,192C1302.9,171,1371,181,1406,186.7L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path>
@@ -517,26 +456,18 @@
             <div class="container">
                 <div class="text-center">
                     <p class="pt-2 pb-1 px-2" style="font-size: 0.95rem;">
-                        Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan untuk memberikan do'a restunya. Kami ucapkan terima kasih.
+                        "Quate"
                     </p>
-
-                    <h2 class="font-esthetic" style="font-size: 2rem;">Wassalamualaikum Warahmatullahi Wabarakatuh</h2>
-                    <h2 class="font-arabic pt-4 px-2" style="font-size: 2rem;">اَلْحَمْدُ لِلّٰهِ رَبِّ الْعٰلَمِيْنَۙ</h2>
-
                     <hr class="mt-3 mb-2">
-
                     <div class="row align-items-center justify-content-between flex-column flex-sm-row pb-3">
                         <div class="col-auto">
                             <small class="text-light">
-                                Build with<i class="fa-solid fa-heart mx-1"></i>Dewanakl
+                                Build with <i class="fa-solid fa-heart mx-1"> </i> Stefano & Maria
                             </small>
                         </div>
                         <div class="col-auto">
                             <small>
-                                <i class="fa-brands fa-github me-1"></i><a target="_blank" href="https://github.com/dewanakl/undangan">dewanakl</a>
-                            </small>
-                            <small>
-                                <i class="fa-brands fa-youtube me-1"></i><a target="_blank" href="https://www.youtube.com/watch?v=1WCIrw85zbQ">I Wanna Grow Old with You</a>
+                                <i class="fa-brands fa-github me-1"></i><a target="_blank" href="https://github.com/stemerlini">stemerlini</a>
                             </small>
                         </div>
                     </div>
@@ -601,6 +532,87 @@
             </div>
         </div>
     </div>
+
+    <!-- Modal RSVP -->
+    <div class="modal fade" id="rsvpModal" tabindex="-1" aria-labelledby="rsvpModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content rounded-4">
+
+            <div class="modal-header">
+              <h5 class="modal-title" id="rsvpModalLabel">RSVP</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            
+            <div class="modal-body">
+
+                <form id="rsvp-form">
+                    
+                    <div class="mb-3">
+                        <label for="guest-name">Your Full Name</label>
+                        <input type="text" class="form-control" id="guest-name" name="name" placeholder="Enter your full name" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email">email</label>
+                        <input type="text" class="form-control" id="email" name="email" placeholder="Enter your full name" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="text2">text2</label>
+                        <input type="text" class="form-control" id="text2" name="text2" placeholder="Enter your full name" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="text3">text3</label>
+                        <input type="text" class="form-control" id="text3" name="text3" placeholder="Enter your full name" required>
+                    </div>
+                
+                    <div class="mb-3">
+                        <label>Will you attend?</label>
+                        <div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="attendance" id="attendance-yes" value="Yes" required>
+                                <label class="form-check-label" for="attendance-yes">Yes</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="attendance" id="attendance-no" value="No">
+                                <label class="form-check-label" for="attendance-no">No</label>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="mb-3">
+                        <label for="guest-count">How many people will be attending with you?</label>
+                        <select class="form-control" id="guest-count" name="guest_count">
+                            <option value="">Select</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                
+                    <div id="additional-guests-section"></div>
+                
+                    <div class="mb-3">
+                        <label for="dietary-restrictions">Dietary Restrictions or Allergies</label>
+                        <input type="text" class="form-control" id="dietary-restrictions" name="dietary_restrictions" placeholder="Specify any restrictions">
+                    </div>
+                
+                    <div class="mb-3">
+                        <label for="message">Song Requests</label>
+                        <textarea class="form-control" id="message" name="song_request" rows="3" placeholder="What song will get you dancing on the big day?"></textarea>
+                    </div>
+                    
+                    <div id="alert-wrapper" class="mb-3"></div>
+                    <button type="submit" class="btn btn-primary w-100">Submit</button>
+                </form>
+                
+            </div>
+          </div>
+        </div>
+      </div>
 
     <!-- Dependencies JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha256-CDOy6cOibCWEdsRiZuaHf8dSGGJRYuBGC+mjoJimHGw=" crossorigin="anonymous"></script>

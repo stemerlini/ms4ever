@@ -1,5 +1,3 @@
-import { comment } from './comment.js';
-
 export const pagination = (() => {
 
     let perPage = 10;
@@ -25,42 +23,6 @@ export const pagination = (() => {
     const disabledNext = () => !liNext.classList.contains('disabled') ? liNext.classList.add('disabled') : null;
 
     const enableNext = () => liNext.classList.contains('disabled') ? liNext.classList.remove('disabled') : null;
-
-    const buttonAction = (button) => {
-        button.disabled = true;
-        const tmp = button.innerHTML;
-        button.innerHTML = `<div class="spinner-border spinner-border-sm my-0 mx-1 p-0" style="height: 0.8rem; width: 0.8rem;"></div>`;
-
-        const process = async () => {
-            await comment.comment();
-
-            button.disabled = false;
-            button.innerHTML = tmp;
-
-            comment.scroll();
-        };
-
-        const next = async () => {
-            pageNow += perPage;
-
-            button.innerHTML = 'Next' + button.innerHTML;
-            await process();
-            page.innerText = parseInt(page.innerText) + 1;
-        };
-
-        const prev = async () => {
-            pageNow -= perPage;
-
-            button.innerHTML = button.innerHTML + 'Prev';
-            await process();
-            page.innerText = parseInt(page.innerText) - 1;
-        };
-
-        return {
-            next,
-            prev,
-        };
-    };
 
     const reset = async () => {
         if (pageNow == 0) {

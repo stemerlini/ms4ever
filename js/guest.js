@@ -1,5 +1,4 @@
 import { util } from './util.js';
-import { session } from './session.js';
 import { storage } from './storage.js';
 import { confetti } from './confetti.js';
 
@@ -96,39 +95,6 @@ export const guest = (() => {
 
     const init = () => {
         countDownDate();
-
-        if (session.isAdmin()) {
-            storage('user').clear();
-            storage('owns').clear();
-            storage('likes').clear();
-            storage('session').clear();
-            storage('comment').clear();
-            storage('tracker').clear();
-        }
-
-        const info = document.getElementById('information');
-        if (info && storage('information').get('info')) {
-            info.remove();
-        }
-
-        if ((document.body.getAttribute('data-key') ?? '').length === 0) {
-            const comment = document.getElementById('comment');
-            if (comment) {
-                comment.remove();
-            }
-
-            const nav = document.querySelector('a.nav-link[href="#comment"]');
-            if (nav) {
-                const item = nav.closest('li.nav-item');
-                if (item) {
-                    item.remove();
-                }
-            }
-
-            return;
-        }
-
-        session.guest();
     };
 
     return {
