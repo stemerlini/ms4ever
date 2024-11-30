@@ -65,6 +65,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css" integrity="sha256-wiz7ZSCn/btzhjKDQBms9Hx4sSeUYsDrTLg7roPstac=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" integrity="sha256-GqiEX9BuR1rv5zPU5Vs2qS/NSHl1BJyBcjQYJ6ycwD4=" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons/css/flag-icons.min.css">
 </head>
 
 <!-- If not using comments, you can remove the data-key and data-url attributes -->
@@ -502,6 +503,9 @@
     </button> -->
 
     <!-- Language button -->
+    <button type="button" id="button-language" class="btn bg-dark border border-2 btn-sm rounded-circle btn-theme" onclick="language.switchLanguage()">
+        <span id="language-flag" class="fi fi-gb"></span> <!-- Default Flag (English) -->
+    </button>
      
 
     <!-- Loading Page -->
@@ -548,27 +552,12 @@
                 <form id="rsvp-form">
                     
                     <div class="mb-3">
-                        <label for="guest-name">Your Full Name</label>
+                        <label for="guest-name" data-translate="fullName">Your Full Name</label>
                         <input type="text" class="form-control" id="guest-name" name="name" placeholder="Enter your full name" required>
                     </div>
-
+                                    
                     <div class="mb-3">
-                        <label for="email">email</label>
-                        <input type="text" class="form-control" id="email" name="email" placeholder="Enter your full name" required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="text2">text2</label>
-                        <input type="text" class="form-control" id="text2" name="text2" placeholder="Enter your full name" required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="text3">text3</label>
-                        <input type="text" class="form-control" id="text3" name="text3" placeholder="Enter your full name" required>
-                    </div>
-                
-                    <div class="mb-3">
-                        <label>Will you attend?</label>
+                        <label data-translate="willYouAttend">Will you attend?</label>
                         <div>
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="attendance" id="attendance-yes" value="Yes" required>
