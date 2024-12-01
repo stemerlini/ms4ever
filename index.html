@@ -553,7 +553,7 @@
                     
                     <div class="mb-3">
                         <label for="guest-name" data-translate="fullName">Your Full Name</label>
-                        <input type="text" class="form-control" id="guest-name" name="name" placeholder="Enter your full name" required>
+                        <input type="text" class="form-control" id="guest-name" name="name" data-translate="inputFullName" placeholder="Enter your full name" required>
                     </div>
                                     
                     <div class="mb-3">
@@ -561,17 +561,17 @@
                         <div>
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="attendance" id="attendance-yes" value="Yes" required>
-                                <label class="form-check-label" for="attendance-yes">Yes</label>
+                                <label class="form-check-label" data-translate="yes" for="attendance-yes">Yes</label>
                             </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="attendance" id="attendance-no" value="No">
-                                <label class="form-check-label" for="attendance-no">No</label>
+                                <label class="form-check-label" data-translate="no" for="attendance-no">No</label>
                             </div>
                         </div>
                     </div>
                 
                     <div class="mb-3">
-                        <label for="guest-count">How many people will be attending with you?</label>
+                        <label for="guest-count" data-translate="guestCount">How many people will be attending with you?</label>
                         <select class="form-control" id="guest-count" name="guest_count">
                             <option value="">Select</option>
                             <option value="1">1</option>
@@ -585,17 +585,17 @@
                     <div id="additional-guests-section"></div>
                 
                     <div class="mb-3">
-                        <label for="dietary-restrictions">Dietary Restrictions or Allergies</label>
+                        <label for="dietary-restrictions" data-translate="dietaryRestrictions">Dietary Restrictions or Allergies</label>
                         <input type="text" class="form-control" id="dietary-restrictions" name="dietary_restrictions" placeholder="Specify any restrictions">
                     </div>
                 
                     <div class="mb-3">
-                        <label for="message">Song Requests</label>
-                        <textarea class="form-control" id="message" name="song_request" rows="3" placeholder="What song will get you dancing on the big day?"></textarea>
+                        <label for="message" data-translate="songRequest">Song Requests</label>
+                        <textarea class="form-control" id="message" name="song_request" rows="3" data-translate="inputsongRequest" placeholder="What song will get you dancing on the big day?"></textarea>
                     </div>
                     
                     <div id="alert-wrapper" class="mb-3"></div>
-                    <button type="submit" class="btn btn-primary w-100">Submit</button>
+                    <button type="submit" data-translate="submit" class="btn btn-primary w-100">Submit</button>
                 </form>
                 
             </div>
