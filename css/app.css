@@ -92,3 +92,14 @@
 canvas {
     display: block;
 }
+
+.gift-section {
+    max-width: 800px; /* Limit the maximum width */
+    margin: 0 auto;   /* Center horizontally */
+    padding: 20px;    /* Add padding for spacing */
+}
+
+.card-body {
+    max-width: 360px; /* Limit card width for better balance */
+    margin: 0 auto;   /* Center each card horizontally */
+}
