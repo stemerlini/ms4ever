@@ -287,7 +287,7 @@ function Update () {
   // Check if the score is high enough to display the trophy
   if (player.x >= trophyX) {
     drawTrophy(1); // Full opacity at target score or higher
-    endGame("You Win!");
+    endGame("Bravo! You helped Stefano to pass the ultimate challenge!");
   } else {
     // Calculate trophy transparency based on the score
     const opacity = score / targetScore;
@@ -301,9 +301,14 @@ function Update () {
 // Function to end the game
 function endGame(message) {
   gameActive = false; // Stop the game loop
-  ctx.font = '30px Arial';
+  ctx.font = '40px Arial';
   ctx.fillStyle = 'green';
-  ctx.fillText(message, canvas.width / 2, canvas.height / 2); // Display message in the center
+  ctx.fillText(message, canvas.width / 2 + 520, canvas.height / 2); // Display message in the center
+
+  confetti({
+    origin: { y: 1 },
+    zIndex: 1057
+  });
 }
 
 Start();
