@@ -75,6 +75,12 @@
     <nav class="navbar bg-dark navbar-expand fixed-top rounded-top-4 border-top p-0" id="navbar-menu">
         <ul class="navbar-nav nav-justified w-100 align-items-center">
             <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                    <i class="fa-solid fa-heart"></i>
+                    <span class="d-block" style="font-size: 0.7rem;">Game</span>
+                </a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="#home">
                     <i class="fa-solid fa-house"></i>
                     <span class="d-block" style="font-size: 0.7rem;">Home</span>
@@ -93,8 +99,14 @@
                 </a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" href="#gift">
+                    <i class="fa-solid fa-gift"></i>
+                    <span class="d-block" style="font-size: 0.7rem;">Gift</span>
+                </a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="#travel">
-                    <i class="fa-solid fa-comments"></i>
+                    <i class="fa-solid fa-plane"></i>
                     <span class="d-block" style="font-size: 0.7rem;">Travel</span>
                 </a>
             </li>
@@ -339,63 +351,149 @@
             <path fill="currentColor" fill-opacity="1" d="M0,96L30,106.7C60,117,120,139,180,154.7C240,171,300,181,360,186.7C420,192,480,192,540,181.3C600,171,660,149,720,154.7C780,160,840,192,900,208C960,224,1020,224,1080,208C1140,192,1200,160,1260,138.7C1320,117,1380,107,1410,101.3L1440,96L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"></path>
         </svg>
 
-        <!-- Love Gift -->
-        <div class="container gift-section">
-            <div class="pb-2">
-                <div class="text-center">
+        <!-- Gift -->
+        <div class="container gift-section" id="gift">
+            <div class="text-center">
 
-                    <h2 class="font-esthetic mt-0 mb-3" style="font-size: 2.5rem;">Gift? Don't Panic!</h2>
-                    <p class="mb-3" style="font-size: 0.95rem;"> Our biggest gift is your presence in our special day. However if you really want to contribute to our honey moon trip! ✈️</p>
-                    <p class="mb-3" style="font-size: 0.95rem;"> Here's are few options:</p>
-                    <div class="overflow-x-hidden">
+                <!-- Header -->
+                <h2 class="font-esthetic mb-3" style="font-size: 2.5rem; margin-top: -10px;" data-translate="giftHeader">Gift? Don't Panic!</h2>
 
-                        <div class="row row-cols-2">
-                            <div class="col card-body border rounded-4 shadow p-4 mx-4 mt-2 mb-4 text-start" data-aos="fade-down" data-aos-duration="1500">
-                                <img src="https://www.svgrepo.com/show/504810/revolut.svg" class="img-fluid w-25" alt="revolut">
-                                <div class="d-flex justify-content-between align-items-center mt-2">
-                                    <p class="m-0 p-0" style="font-size: 0.95rem;">1234 5678 9101 112</p>
-                                    <!-- Bank Acount revolut -->
-                                    <button class="btn btn-outline-dark btn-sm rounded-4" data-copy="123456789101112" onclick="util.copy(this, 'Tersalin')"><i class="fa-solid fa-copy me-1"></i>Copy</button>
-                                </div>
-                                <p class="mt-2 mb-0 p-0" style="font-size: 0.95rem;">Maria Slimpa</p>
+                <!-- Main Message -->
+                <p class="mb-3" style="font-size: 0.95rem;" data-translate="giftMainMessage">
+                    Your presence at our wedding is the most precious gift we could ever ask for.
+                </p>
+            
+                <!-- Contribution Message -->
+                <p class="mb-3" style="font-size: 0.95rem;" data-translate="giftContributionMessage">
+                    However, if you’d like to contribute, we’ve provided a few bank account options to support our honeymoon plans. ✈️✨
+                </p>
+            
+                <!-- Thank You Message -->
+                <p class="mb-3" style="font-size: 0.95rem;" data-translate="giftThankYou">
+                    Thank you for being part of our special day!
+                </p>
+
+                <!-- Card Row -->
+                <div class="row">
+                    <!-- Left Column -->
+                    <div class="col-md-6">
+                        <!-- Revolut Card -->
+                        <div class="card-body border rounded-4 shadow p-4 mx-4 mt-2 mb-4 text-start" data-aos="fade-down" data-aos-duration="1500">
+                            <img src="https://www.svgrepo.com/show/504810/revolut.svg" class="img-fluid w-25" alt="revolut">
+                            <div class="d-flex justify-content-between align-items-center mt-2">
+                                <p class="m-0 p-0" style="font-size: 0.95rem;">1234 5678 9101 112</p>
+                                <button class="btn btn-outline-dark btn-sm rounded-4" data-copy="123456789101112" onclick="util.copy(this, 'Tersalin')">
+                                    <i class="fa-solid fa-copy me-1"></i>Copy
+                                </button>
                             </div>
+                            <p class="mt-2 mb-0 p-0" style="font-size: 0.95rem;">Maria Slimpa</p>
+                        </div>
 
-                            <div class="col card-body border rounded-4 shadow p-4 mx-4 mt-2 mb-4 text-start" data-aos="fade-down" data-aos-duration="1500">
-                                <img src="https://downloadr2.apkmirror.com/wp-content/uploads/2021/09/13/6133a52d7d2be.png" class="img-fluid w-25" alt="pp">
-
-                                <div class="d-flex justify-content-between align-items-center mt-2">
-                                    <p class="m-0 p-0" style="font-size: 0.95rem;">1234 5678 9101 112</p>
-                                    <!-- Ubah juga data-copy sesuai dengan no rekening -->
-                                    <button class="btn btn-outline-dark btn-sm rounded-4" data-copy="123456789101112" onclick="util.copy(this, 'Tersalin')"><i class="fa-solid fa-copy me-1"></i>Copy</button>
-                                </div>
-                                <p class="mt-2 mb-0 p-0" style="font-size: 0.95rem;">Stefano Merlini</p>
+                        <!-- PP Card -->
+                        <div class="card-body border rounded-4 shadow p-4 mx-4 mt-2 mb-4 text-start" data-aos="fade-down" data-aos-duration="1500">
+                            <img src="https://downloadr2.apkmirror.com/wp-content/uploads/2021/09/13/6133a52d7d2be.png" class="img-fluid w-25" alt="pp">
+                            <div class="d-flex justify-content-between align-items-center mt-2">
+                                <p class="m-0 p-0" style="font-size: 0.95rem;">1234 5678 9101 112</p>
+                                <button class="btn btn-outline-dark btn-sm rounded-4" data-copy="123456789101112" onclick="util.copy(this, 'Tersalin')">
+                                    <i class="fa-solid fa-copy me-1"></i>Copy
+                                </button>
                             </div>
-                            
-                            <div class="col card-body border rounded-4 shadow p-4 mx-4 mt-2 mb-4 text-start" data-aos="fade-down" data-aos-duration="1500">
-                                <img src="https://companieslogo.com/img/orig/EUROB.AT-5f755e43.svg?t=1720244491&download=true" class="img-fluid w-25" alt="eurobank">
+                            <p class="mt-2 mb-0 p-0" style="font-size: 0.95rem;">Stefano Merlini</p>
+                        </div>
+                    </div>
 
-                                <div class="d-flex justify-content-between align-items-center mt-2">
-                                    <p class="m-0 p-0" style="font-size: 0.95rem;">1234 5678 9101 112</p>
-                                    <!-- Ubah juga data-copy sesuai dengan no rekening -->
-                                    <button class="btn btn-outline-dark btn-sm rounded-4" data-copy="123456789101112" onclick="util.copy(this, 'Tersalin')"><i class="fa-solid fa-copy me-1"></i>Copy</button>
-                                </div>
-                                <p class="mt-2 mb-0 p-0" style="font-size: 0.95rem;">Maria Slimpa</p>
+                    <!-- Right Column -->
+                    <div class="col-md-6">
+                        <!-- Eurobank Card -->
+                        <div class="card-body border rounded-4 shadow p-4 mx-4 mt-2 mb-4 text-start" data-aos="fade-down" data-aos-duration="1500">
+                            <img src="https://companieslogo.com/img/orig/EUROB.AT-5f755e43.svg?t=1720244491&download=true" class="img-fluid w-25" alt="eurobank">
+                            <div class="d-flex justify-content-between align-items-center mt-2">
+                                <p class="m-0 p-0" style="font-size: 0.95rem;">1234 5678 9101 112</p>
+                                <button class="btn btn-outline-dark btn-sm rounded-4" data-copy="123456789101112" onclick="util.copy(this, 'Tersalin')">
+                                    <i class="fa-solid fa-copy me-1"></i>Copy
+                                </button>
                             </div>
-
+                            <p class="mt-2 mb-0 p-0" style="font-size: 0.95rem;">Maria Slimpa</p>
                         </div>
                     </div>
                 </div>
-                
             </div>
         </div>
 
+
         <!-- Wave Separator -->
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="color-theme-black">
-            <path fill="currentColor" fill-opacity="1" d="M0,224L34.3,234.7C68.6,245,137,267,206,266.7C274.3,267,343,245,411,234.7C480,224,549,224,617,213.3C685.7,203,754,181,823,197.3C891.4,213,960,267,1029,266.7C1097.1,267,1166,213,1234,192C1302.9,171,1371,181,1406,186.7L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path>
+            <path fill="currentColor" fill-opacity="1" d="M0,96L30,106.7C60,117,120,139,180,154.7C240,171,300,181,360,186.7C420,192,480,192,540,181.3C600,171,660,149,720,154.7C780,160,840,192,900,208C960,224,1020,224,1080,208C1140,192,1200,160,1260,138.7C1320,117,1380,107,1410,101.3L1440,96L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path>
         </svg>
 
-       <!-- FAQ -->
-        <section class="dark-section bg-black" id="faq">
+       <!-- Travel Information -->
+        <section class="dark-section bg-black" id="travel">
+            <div class="container">
+                <div class="text-center">
+
+                    <h2 class="font-esthetic py-3" style="font-size: 2rem;" data-translate="headerTravel">Useful Travel Information ✈️</h2>
+                    
+                    <!-- Getting In -->
+                    <div class="py-2" data-aos="fade-right" data-aos-duration="1500">
+                        <h2 class="font-esthetic" style="font-size: 2rem;" data-translate="gettingIn">Getting In</h2>
+                        <p style="font-size: 0.95rem;" data-translate="gettingInDescription">
+                            We recommend flying into <strong>Thessaloniki Airport "Makedonia" (SKG)</strong>, conveniently located near the wedding venue.
+                        </p>
+                    </div>
+
+                    <!-- Getting into the City Center -->
+                    <div class="py-2" data-aos="fade-left" data-aos-duration="1500">
+                        <h2 class="font-esthetic" style="font-size: 2rem;" data-translate="gettingToCity">Getting into the City Center</h2>
+                        <p style="font-size: 0.95rem;" data-translate="gettingToCityDescription">
+                            - <strong>Car Rental:</strong> Affordable options available at the airport. Book early for the best rates. <br>
+                            - <strong>Taxis:</strong> Approx. 10-15€ to nearby hotels and 20-30€ to the city center. <br>
+                            - <strong>Bus:</strong> Bus Line 01X connects the airport to the city center for just 2€.
+                        </p>
+                    </div>
+
+                    <!-- Accommodation Options -->
+                    <div class="py-2" data-aos="fade-right" data-aos-duration="1500">
+                        <h2 class="font-esthetic" style="font-size: 2rem;" data-translate="accommodations">Accommodation Options</h2>
+                        <p style="font-size: 0.95rem;" data-translate="accommodationsDescription">
+                            <strong>Hotels Near the Venue:</strong> <br>
+                            - <a href="https://www.avalonhotel.gr/" target="_blank" class="text-decoration-underline">Avalon Hotel Thessaloniki</a>: Located 3 km from the airport, offering comfort, a pool, and free parking. <br>
+                            - <a href="https://www.athinaairporthotel.gr/" target="_blank" class="text-decoration-underline">Athina Airport Hotel</a>: Modern amenities, restaurant, and spa close to the airport. <br>
+                            - <a href="https://www.royal-hotel.gr/" target="_blank" class="text-decoration-underline">Royal Hotel Thessaloniki</a>: Luxurious boutique hotel with stunning views, 5 km from the venue.
+                        </p>
+                    </div>
+
+                    <!-- Things to Do -->
+                    <div class="py-2" data-aos="fade-left" data-aos-duration="1500">
+                        <h2 class="font-esthetic" style="font-size: 2rem;" data-translate="thingsToDo">Things to Do</h2>
+                        <p style="font-size: 0.95rem;" data-translate="thingsToDoDescription">
+                            - <strong>The White Tower:</strong> Thessaloniki’s iconic landmark. <br>
+                            - <strong>Aristotelous Square:</strong> The heart of Thessaloniki with cafes and shops. <br>
+                            - <strong>Ano Poli:</strong> Explore the cobblestone streets and enjoy city views. <br>
+                            - <strong>Long Sea Walk:</strong> Perfect for a scenic sunset stroll. <br>
+                            - <strong>Archaeological Museum of Thessaloniki:</strong> Learn about Macedonia’s rich history. <br>
+                        </p>
+                    </div>
+
+                    <!-- Food and Drinks -->
+                    <div class="py-2" data-aos="fade-right" data-aos-duration="1500">
+                        <h2 class="font-esthetic" style="font-size: 2rem;" data-translate="foodAndDrinks">Food and Drinks</h2>
+                        <p style="font-size: 0.95rem;" data-translate="foodAndDrinksDescription">
+                            - <strong>Trigona Panorama:</strong> Don’t miss Thessaloniki’s signature cream-filled pastries. <br>
+                            - <strong>Nea Diagonios:</strong> Known for the best gyros and souvlaki. <br>
+                            - <strong>To Elliniko:</strong> Authentic Greek cuisine in a cozy atmosphere. <br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Wave Separator -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="color-theme-black">
+            <path fill="currentColor" fill-opacity="1" d="M0,96L30,106.7C60,117,120,139,180,154.7C240,171,300,181,360,186.7C420,192,480,192,540,181.3C600,171,660,149,720,154.7C780,160,840,192,900,208C960,224,1020,224,1080,208C1140,192,1200,160,1260,138.7C1320,117,1380,107,1410,101.3L1440,96L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"></path>
+        </svg>
+
+            <!-- FAQ -->
+        <section class="dark-section" id="faq">
             <div class="container">
                 <div class="text-center">
                     <!-- Section Title -->
@@ -404,14 +502,14 @@
                     <!-- Accordion -->
                     <div class="accordion mt-4" id="faqAccordion">
                         <!-- Question 1 -->
-                        <div class="accordion-item bg-black border-light">
+                        <div class="accordion-item border-light">
                             <h2 class="accordion-header" id="faqHeading1">
                                 <button class="accordion-button collapsed text-light bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="false" aria-controls="faqCollapse1">
                                     What time does the ceremony start?
                                 </button>
                             </h2>
                             <div id="faqCollapse1" class="accordion-collapse collapse" aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body text-light">
+                                <div class="accordion-body text-light bg-dark">
                                     The ceremony begins at <strong>19:30</strong>. Please arrive a little early to find your seat.
                                 </div>
                             </div>
@@ -425,7 +523,7 @@
                                 </button>
                             </h2>
                             <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body text-light">
+                                <div class="accordion-body text-light bg-dark">
                                     Dinner will take place at <strong>20:30</strong> in the main hall, following the ceremony.
                                 </div>
                             </div>
@@ -439,7 +537,7 @@
                                 </button>
                             </h2>
                             <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body text-light">
+                                <div class="accordion-body text-light bg-dark">
                                     The dress code is <strong>formal</strong>. Feel free to dress comfortably but elegantly for the occasion.
                                 </div>
                             </div>
@@ -453,7 +551,7 @@
                                 </button>
                             </h2>
                             <div id="faqCollapse4" class="accordion-collapse collapse" aria-labelledby="faqHeading4" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body text-light">
+                                <div class="accordion-body text-light bg-dark">
                                     Yes, there is ample parking available at the venue. Please follow the signs to the parking lot.
                                 </div>
                             </div>
@@ -463,24 +561,18 @@
             </div>
         </section>
 
-
-        <!-- Wave Separator -->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="color-theme-black">
-            <path fill="currentColor" fill-opacity="1" d="M0,96L30,106.7C60,117,120,139,180,154.7C240,171,300,181,360,186.7C420,192,480,192,540,181.3C600,171,660,149,720,154.7C780,160,840,192,900,208C960,224,1020,224,1080,208C1140,192,1200,160,1260,138.7C1320,117,1380,107,1410,101.3L1440,96L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"></path>
-        </svg>
-    
         <!-- End Of Invitation -->
         <section class="dark-section pb-5">
-            <div class="container">
+            <div class="container" style="margin-top: 200px;">
                 <div class="text-center">
-                    <p class="pt-2 pb-1 px-2" style="font-size: 0.95rem;">
+                    <p class="pt-2 pb-1 px-2" style="font-size: 1rem;">
                         "Quate"
                     </p>
                     <hr class="mt-3 mb-2">
                     <div class="row align-items-center justify-content-between flex-column flex-sm-row pb-3">
                         <div class="col-auto">
                             <small class="text-light">
-                                Build with <i class="fa-solid fa-heart mx-1"> </i> Stefano & Maria
+                                Build with <i class="fa-solid fa-heart mx-1"> </i> by Maria & Stefano
                             </small>
                         </div>
                         <div class="col-auto">
@@ -495,8 +587,8 @@
     </main>
 
     <!-- Welcome Page -->
-    <div class="loading-page bg-black" id="welcome" style="opacity: 1;">
-        <div class="d-flex justify-content-center align-items-center" style="height: 100vh !important; overflow: hidden;">
+    <div class="welcome-page bg-black" id="welcome" style="opacity: 1;">
+        <div class="d-flex justify-content-center align-items-center" style="margin-top: 3%;">
             <div class="text-center">
                 <h2 class="font-esthetic mb-4" style="font-size: 2.5rem;">The Wedding Of</h2>
                 <h2 class="font-esthetic my-4" style="font-size: 2.5rem;">Maria &amp; Stefano</h2>
@@ -512,12 +604,14 @@
                 </button>
 
                 <!-- Instructions Section -->
-                <div class="text-center" style="margin-top: 70px;">
-                    <h2 class="font-esthetic mb-4 mb-md-3" style="font-size: 2.5rem;">
-                        Instructions:
-                    </h2>
-                    <img src="./assets/images/WASD Key.png" alt="WASD Instructions" style="max-width: 150px; height: auto;" class="mt-3 md-4">
-                </div>
+            <div class="d-flex justify-content-center align-items-center text-center flex-wrap mt-5">
+                <!-- Title -->
+                <h2 class="font-esthetic mb-4 mb-md-3" style="font-size: 2.5rem; margin-right: 20px;">
+                    Instructions:
+                </h2>
+                <!-- WASD Key Image -->
+                <img src="./assets/images/WASD Key.png" alt="WASD Instructions" style="max-width: 150px; height: auto;" class="mt-2">
+            </div>
 
             </div>
         </div>

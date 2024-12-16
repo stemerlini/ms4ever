@@ -1,5 +1,8 @@
 @import url("common.css");
 @import url("animation.css");
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
 
 * {
     scrollbar-width: none;
@@ -11,7 +14,7 @@
 }
 
 .font-esthetic {
-    font-family: Sacramento, cursive !important;
+    font-family: 'Dancing Script', cursive, serif !important;
 }
 
 .img-crop {
@@ -46,19 +49,14 @@
     z-index: 1056 !important;
 }
 
-/* Adjust title for smaller screens */
-.loading-page h2 {
-    font-size: 2rem; /* Slightly reduce font size */
-    text-align: center; /* Ensure the text stays centered */
-    margin: 0.5rem 0; /* Reduce margins to fit content */
-}
-
-/* Scale WASD Key image */
-.loading-page img {
-    max-width: 150px; /* Constrain the width */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Ensure proper positioning */
-    margin: 1rem auto; /* Center and add spacing */
+.welcome-page {
+    position: fixed;
+    max-height: 100vh;
+    overflow: hidden; /* Prevent page overflow */
+    inset: 0 !important;
+    width: 100%;
+    height: 100%;
+    z-index: 1056 !important;
 }
 
 .dark-section {
@@ -108,33 +106,4 @@ canvas {
 .card-body {
     max-width: 360px; /* Limit card width for better balance */
     margin: 0 auto;   /* Center each card horizontally */
-}
-
-/* Media queries for smaller screens */
-@media (max-width: 768px) {
-    .loading-page h2 {
-        font-size: 1.8rem; /* Reduce font size further */
-    }
-
-    .loading-page img {
-        max-width: 120px; /* Scale down image */
-    }
-
-    canvas {
-        max-width: 85%; /* Reduce canvas width */
-    }
-}
-
-@media (max-width: 576px) {
-    .loading-page h2 {
-        font-size: 1.5rem; /* Smaller font for very small screens */
-    }
-
-    .loading-page img {
-        max-width: 100px; /* Further reduce image size */
-    }
-
-    canvas {
-        max-width: 80%; /* Further reduce canvas width */
-    }
 }
