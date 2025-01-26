@@ -24,7 +24,7 @@ export const rsvp = {
             const urlEncodedData = new URLSearchParams(formData);
         
             // Send data to Google Apps Script
-            fetch('https://script.google.com/macros/s/AKfycby8BzlMcZJnOvhX8wRlOUQgzKi5TYgWFuByAKe3Vg1PEl15UhUx-rCsHz74uAE4O3I0lw/exec', {
+            fetch('https://script.google.com/macros/s/AKfycbxrxHdVnFG6EsJaWqYEp_jIrvm--PxZCAH7R5USaoHZgTubbKE5cKJ4tjgUZnKSbFSvLA/exec', {
             method: 'POST',
             body: urlEncodedData,
             })
