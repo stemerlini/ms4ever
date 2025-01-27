@@ -47,9 +47,14 @@ document.addEventListener('keyup', function (evt) {
   keys[evt.code] = false;
 });
 
-// Load the trophy image
+// // Load the trophy image
+// const trophyImage = new Image();
+// trophyImage.src = '../assets/images/Maria.png'; // Add the path to your trophy image
+
 const trophyImage = new Image();
-trophyImage.src = '../assets/images/Maria.png'; // Add the path to your trophy image
+trophyImage.src = '../assets/images/Maria.png';
+trophyImage.onload = () => console.log("Trophy image loaded.");
+trophyImage.onerror = () => console.error("Failed to load trophy image.");
 
 // Function to draw the trophy on the right-hand side
 function drawTrophy(opacity) {
@@ -74,7 +79,10 @@ class Player {
     // Image-related properties
     this.image = new Image();
     this.image.src = "../assets/images/Ste.png"; // The path to your T-rex image
-
+    this.image.onload = () => {
+      // This ensures the image is drawn only after it's loaded
+      this.ready = true;
+    };
     // Physics properties
     this.dy = 0;
     this.jumpForce = 15;
