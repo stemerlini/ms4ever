@@ -137,8 +137,10 @@ class Player {
     }
   }
 
-  Draw() {
-    ctx.drawImage(this.image, this.x, this.y, this.w, this.h);
+  Draw () {
+    if (this.ready) {
+      ctx.drawImage(this.image, this.x, this.y, this.w, this.h)
+    }
   }
 }
 
