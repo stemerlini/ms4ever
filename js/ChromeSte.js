@@ -53,8 +53,9 @@ document.addEventListener('keyup', function (evt) {
 
 const trophyImage = new Image();
 trophyImage.src = '../assets/images/Maria.png';
-trophyImage.onload = () => console.log("Trophy image loaded.");
-trophyImage.onerror = () => console.error("Failed to load trophy image.");
+trophyImage.onload = () => {
+  this.ready = true;
+}
 
 // Function to draw the trophy on the right-hand side
 function drawTrophy(opacity) {
@@ -64,7 +65,9 @@ function drawTrophy(opacity) {
   const trophyY = canvas.height - trophyHeight; // Position near the bottom
   // Set the transparency based on the opacity value
   ctx.globalAlpha = opacity;
-  ctx.drawImage(trophyImage, trophyX, trophyY, trophyWidth, trophyHeight);
+  if (this.ready) {
+    ctx.drawImage(trophyImage, trophyX, trophyY, trophyWidth, trophyHeight);
+  }
   // Reset globalAlpha to 1 for other elements
   ctx.globalAlpha = 1;
 }
