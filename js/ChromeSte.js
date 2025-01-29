@@ -65,9 +65,7 @@ function drawTrophy(opacity) {
   const trophyY = canvas.height - trophyHeight; // Position near the bottom
   // Set the transparency based on the opacity value
   ctx.globalAlpha = opacity;
-  if (this.ready) {
-    ctx.drawImage(trophyImage, trophyX, trophyY, trophyWidth, trophyHeight);
-  }
+  ctx.drawImage(trophyImage, trophyX, trophyY, trophyWidth, trophyHeight);
   // Reset globalAlpha to 1 for other elements
   ctx.globalAlpha = 1;
 }
