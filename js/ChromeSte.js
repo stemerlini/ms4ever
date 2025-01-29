@@ -52,7 +52,7 @@ document.addEventListener('keyup', function (evt) {
 // trophyImage.src = '../assets/images/Maria.png'; // Add the path to your trophy image
 
 const trophyImage = new Image();
-trophyImage.src = '../assets/images/Maria.png';
+trophyImage.src = './assets/images/Maria.png';
 trophyImage.onload = () => {
   this.ready = true;
 }
@@ -79,7 +79,7 @@ class Player {
 
     // Image-related properties
     this.image = new Image();
-    this.image.src = "../assets/images/Ste.png"; // The path to your T-rex image
+    this.image.src = "./assets/images/Ste.png"; // The path to your T-rex image
     this.image.onload = () => {
       // This ensures the image is drawn only after it's loaded
       this.ready = true;
@@ -154,7 +154,7 @@ class Obstacle {
     this.type = RandomIntInRange(1, 7);
     // Image-related properties
     this.image = new Image();
-    this.image.src = `../assets/images/obstacle_${this.type}.png`; // The path to your cactus image
+    this.image.src = `./assets/images/obstacle_${this.type}.png`; // The path to your cactus image
     this.image.onload = () => {
       // This ensures the image is drawn only after it's loaded
       this.ready = true;
