@@ -37,14 +37,20 @@ let gravity;
 let obstacles = [];
 let gameSpeed;
 let keys = {};
-let targetScore = 1000
+let targetScore = 940
 
-// Event Listeners
-document.addEventListener('keydown', function (evt) {
-  keys[evt.code] = true;
+// Event Listeners for Keyboard
+window.addEventListener('keydown', (e) => keys[e.code] = true);
+window.addEventListener('keyup', (e) => keys[e.code] = false);
+
+// Event Listeners for Touch Controls
+canvas.addEventListener('touchstart', (e) => {
+    e.preventDefault();
+    player.Jump();
 });
-document.addEventListener('keyup', function (evt) {
-  keys[evt.code] = false;
+canvas.addEventListener('touchend', (e) => {
+    e.preventDefault();
+    player.jumpTimer = 0;
 });
 
 // // Load the trophy image
@@ -59,10 +65,10 @@ trophyImage.onload = () => {
 
 // Function to draw the trophy on the right-hand side
 function drawTrophy(opacity) {
-  const trophyWidth = 150;
-  const trophyHeight = 264;
+  const trophyWidth = 0.07*canvas.width
+  const trophyHeight = 0.3*canvas.height
   const trophyX = canvas.width - trophyWidth;  // Position at the right-hand side
-  const trophyY = canvas.height - trophyHeight; // Position near the bottom
+  const trophyY = canvas.height - trophyHeight + 10; // Position near the bottom
   // Set the transparency based on the opacity value
   ctx.globalAlpha = opacity;
   ctx.drawImage(trophyImage, trophyX, trophyY, trophyWidth, trophyHeight);
@@ -231,7 +237,7 @@ function Start () {
     highscore = localStorage.getItem('highscore');
   }
 
-  player = new Player(25, 0, 100, 283);
+  player = new Player(25, 0, 0.05*canvas.width, 0.3*canvas.height);
   scoreText = new Text("Score: " + score, 25, 50, "left", "#212121", "40");
   highscoreText = new Text("Highscore: " + highscore, canvas.width - 25,  50, "right", "#212121", "40");
 
@@ -294,7 +300,7 @@ function Update () {
   
   highscoreText.Draw();
 
-  const trophyX = canvas.width - 2*110; // Trophy's position on the canvas
+  const trophyX = canvas.width - 2*130; // Trophy's position on the canvas
   // Check if the score is high enough to display the trophy
   if (player.x >= trophyX) {
     drawTrophy(1); // Full opacity at target score or higher
