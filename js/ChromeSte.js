@@ -1,5 +1,23 @@
+// Mobile detection function
+function isMobile() {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) 
+      || window.innerWidth <= 768;
+}
+
+// Get elements
+const gameContainer = document.getElementById('game-container');
+const mobileMessage = document.getElementById('mobile-message');
 const canvas = document.getElementById('game');
 const ctx = canvas.getContext('2d');
+
+// Check if mobile and handle display
+if (isMobile()) {
+  canvas.style.display = 'none';
+  mobileMessage.style.display = 'block';
+  // Exit the script for mobile devices
+  throw new Error('Mobile device detected - game disabled');
+}
+
 localStorage.clear();
 
 const CANVAS_WIDTH = 700;  // Internal width of the canvas

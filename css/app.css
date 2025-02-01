@@ -92,6 +92,25 @@
     align-items: center;
 }
 
+#game-container {
+    width: 100%;
+    margin: 20px 0;
+}
+
+#mobile-message {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 300px;
+}
+
+#mobile-message p {
+    margin: 0;
+    font-size: 1.2rem;
+    color: white;
+}
+
 /* Canvas settings */
 canvas {
     display: block;
