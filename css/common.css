@@ -21,13 +21,13 @@ svg>path {
     transition: color 350ms ease;
 }
 
-.bg-theme-light {
+/* .bg-theme-light {
     background-color: var(--bs-gray-100);
 }
 
 .bg-theme-dark {
     background-color: var(--bs-gray-800);
-}
+} */
 
 .card-body {
     overflow-wrap: break-word !important;

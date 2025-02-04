@@ -120,29 +120,18 @@
     </nav>
 
     <!-- Main Content -->
-    <main class="bg-dark text-light" data-bs-spy="scroll" data-bs-target="#navbar-menu" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="0">
+    <main class="text-light" data-bs-spy="scroll" data-bs-target="#navbar-menu" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="0">
 
         <!-- Home -->
-        <section id="home" class="position-relative overflow-hidden p-0 m-0">
-            <div class="position-relative text-center pt-4 pb-0 px-0 m-0">
-                <div class="py-4">
-                    <div class="img-crop border border-3 border-light shadow mx-auto">
-                        <img src="./assets/images/bg.png" alt="bg" onclick="util.modal(this)">
-                    </div>
-                </div>
-
+        <section id="home" class="header-section">
+            <div style="margin: 1.5in auto;">
                 <h2 class="font-esthetic my-4" style="font-size: 2.5rem;">Maria &amp; Stefano</h2>
-                <p class="mb-0" style="font-size: 1.25rem;">Saturday, 20 September 2024</p>
-
-                <!-- <a class="btn btn-outline-light btn-sm shadow rounded-pill px-3 my-2" target="_blank" href="https://calendar.app.google/W8Bi9RrxhYFvJxKG8">
-                    <i class="fa-solid fa-calendar-check me-2"></i>Save The Date
-                </a> -->
-                
+                <p class="mt-4 mb-4" style="font-size: 1.25rem;">Saturday, 20 September 2024</p>
                 <!-- RSVP -->
                 <a class="btn btn-outline-light btn-sm shadow rounded-pill px-3 my-2" data-bs-toggle="modal" data-bs-target="#rsvpModal">
                     <i class="fa-solid fa-calendar-check me-2"></i>Save The Date
                 </a>
-
+                
                 <div class="d-flex justify-content-center align-items-center mt-4 mb-2">
                     <div class="mouse-animation border border-2">
                         <div class="scroll-animation"></div>
@@ -154,12 +143,12 @@
         </section>
 
         <!-- Wave Separator -->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="color-theme-black">
-            <path fill="currentColor" fill-opacity="1" d="M0,160L48,144C96,128,192,96,288,106.7C384,117,480,171,576,165.3C672,160,768,96,864,96C960,96,1056,160,1152,154.7C1248,149,1344,75,1392,37.3L1440,0L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="waves">
+            <path fill="white" fill-opacity="1" d="M0,160L48,144C96,128,192,96,288,106.7C384,117,480,171,576,165.3C672,160,768,96,864,96C960,96,1056,160,1152,154.7C1248,149,1344,75,1392,37.3L1440,0L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
         </svg>
 
           <!-- Our Story -->
-        <section class="dark-section bg-black" id="story">
+        <section class="story-section" id="story">
             <div class="text-center">
                 <!-- Heart Animation -->
                 <div class="position-relative">
@@ -238,14 +227,13 @@
             </div>
         </div>
         
-
         <!-- Wave Separator -->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="color-theme-black">
-            <path fill="currentColor" fill-opacity="1" d="M0,192L40,181.3C80,171,160,149,240,149.3C320,149,400,171,480,165.3C560,160,640,128,720,128C800,128,880,160,960,186.7C1040,213,1120,235,1200,218.7C1280,203,1360,149,1400,122.7L1440,96L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="waves">
+            <path fill="white" fill-opacity="1" d="M0,192L40,181.3C80,171,160,149,240,149.3C320,149,400,171,480,165.3C560,160,640,128,720,128C800,128,880,160,960,186.7C1040,213,1120,235,1200,218.7C1280,203,1360,149,1400,122.7L1440,96L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path>
         </svg>
 
         <!-- Invitation Text -->
-        <div class="container">
+        <div class="invitation-div">
             <div class="text-center" data-aos="fade-up" data-aos-duration="2000">
 
                 <h2 class="font-esthetic mt-0 mb-3" style="font-size: 2rem">Invitation title</h2>
@@ -268,13 +256,13 @@
         </div>
 
         <!-- Wave Separator -->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="color-theme-black">
-            <path fill="currentColor" fill-opacity="1" d="M0,96L30,106.7C60,117,120,139,180,154.7C240,171,300,181,360,186.7C420,192,480,192,540,181.3C600,171,660,149,720,154.7C780,160,840,192,900,208C960,224,1020,224,1080,208C1140,192,1200,160,1260,138.7C1320,117,1380,107,1410,101.3L1440,96L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="waves">
+            <path fill="white" fill-opacity="1" d="M0,96L30,106.7C60,117,120,139,180,154.7C240,171,300,181,360,186.7C420,192,480,192,540,181.3C600,171,660,149,720,154.7C780,160,840,192,900,208C960,224,1020,224,1080,208C1140,192,1200,160,1260,138.7C1320,117,1380,107,1410,101.3L1440,96L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path>
         </svg>
 
         <!-- Wedding Date -->
-        <section class="dark-section bg-black" id="wedding-date">
-            <div class="container">
+        <section id="wedding-date">
+            <div>
                 <div class="text-center">
 
                     <h2 class="font-esthetic py-3" style="font-size: 2rem;">Days left before the party 🎉</h2>
@@ -347,14 +335,13 @@
         </section>
         
         <!-- Wave Separator -->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="color-theme-black">
-            <path fill="currentColor" fill-opacity="1" d="M0,96L30,106.7C60,117,120,139,180,154.7C240,171,300,181,360,186.7C420,192,480,192,540,181.3C600,171,660,149,720,154.7C780,160,840,192,900,208C960,224,1020,224,1080,208C1140,192,1200,160,1260,138.7C1320,117,1380,107,1410,101.3L1440,96L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"></path>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="waves">
+            <path fill="white" fill-opacity="1" d="M0,96L30,106.7C60,117,120,139,180,154.7C240,171,300,181,360,186.7C420,192,480,192,540,181.3C600,171,660,149,720,154.7C780,160,840,192,900,208C960,224,1020,224,1080,208C1140,192,1200,160,1260,138.7C1320,117,1380,107,1410,101.3L1440,96L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"></path>
         </svg>
 
         <!-- Gift -->
-        <div class="container gift-section" id="gift">
+        <div class="gift-section" id="gift">
             <div class="text-center">
-
                 <!-- Header -->
                 <h2 class="font-esthetic mb-3" style="font-size: 2.5rem; margin-top: -10px;" data-translate="giftHeader">Gift? Don't Panic!</h2>
 
@@ -422,8 +409,8 @@
 
 
         <!-- Wave Separator -->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="color-theme-black">
-            <path fill="currentColor" fill-opacity="1" d="M0,96L30,106.7C60,117,120,139,180,154.7C240,171,300,181,360,186.7C420,192,480,192,540,181.3C600,171,660,149,720,154.7C780,160,840,192,900,208C960,224,1020,224,1080,208C1140,192,1200,160,1260,138.7C1320,117,1380,107,1410,101.3L1440,96L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="waves">
+            <path fill="white" fill-opacity="1" d="M0,96L30,106.7C60,117,120,139,180,154.7C240,171,300,181,360,186.7C420,192,480,192,540,181.3C600,171,660,149,720,154.7C780,160,840,192,900,208C960,224,1020,224,1080,208C1140,192,1200,160,1260,138.7C1320,117,1380,107,1410,101.3L1440,96L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path>
         </svg>
 
        <!-- Travel Information -->
@@ -488,72 +475,70 @@
         </section>
         
         <!-- Wave Separator -->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="color-theme-black">
-            <path fill="currentColor" fill-opacity="1" d="M0,96L30,106.7C60,117,120,139,180,154.7C240,171,300,181,360,186.7C420,192,480,192,540,181.3C600,171,660,149,720,154.7C780,160,840,192,900,208C960,224,1020,224,1080,208C1140,192,1200,160,1260,138.7C1320,117,1380,107,1410,101.3L1440,96L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"></path>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="waves">
+            <path fill="white" fill-opacity="1" d="M0,96L30,106.7C60,117,120,139,180,154.7C240,171,300,181,360,186.7C420,192,480,192,540,181.3C600,171,660,149,720,154.7C780,160,840,192,900,208C960,224,1020,224,1080,208C1140,192,1200,160,1260,138.7C1320,117,1380,107,1410,101.3L1440,96L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"></path>
         </svg>
 
             <!-- FAQ -->
-        <section class="dark-section" id="faq">
-            <div class="container">
-                <div class="text-center">
-                    <!-- Section Title -->
-                    <h2 class="font-esthetic py-3" style="font-size: 2rem;">F.A.Q.</h2>
-                    
-                    <!-- Accordion -->
-                    <div class="accordion mt-4" id="faqAccordion">
-                        <!-- Question 1 -->
-                        <div class="accordion-item border-light">
-                            <h2 class="accordion-header" id="faqHeading1">
-                                <button class="accordion-button collapsed text-light bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="false" aria-controls="faqCollapse1">
-                                    What time does the ceremony start?
-                                </button>
-                            </h2>
-                            <div id="faqCollapse1" class="accordion-collapse collapse" aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body text-light bg-dark">
-                                    The ceremony begins at <strong>19:30</strong>. Please arrive a little early to find your seat.
-                                </div>
+        <section class="faq-section" id="faq">
+            <div class="text-center bg-dark">
+                <!-- Section Title -->
+                <h2 class="font-esthetic py-3" style="font-size: 2rem;">F.A.Q.</h2>
+                
+                <!-- Accordion -->
+                <div class="accordion mt-4" id="faqAccordion">
+                    <!-- Question 1 -->
+                    <div class="accordion-item border-light">
+                        <h2 class="accordion-header" id="faqHeading1">
+                            <button class="accordion-button collapsed text-light bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="false" aria-controls="faqCollapse1">
+                                What time does the ceremony start?
+                            </button>
+                        </h2>
+                        <div id="faqCollapse1" class="accordion-collapse collapse" aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body text-light bg-dark">
+                                The ceremony begins at <strong>19:30</strong>. Please arrive a little early to find your seat.
                             </div>
                         </div>
+                    </div>
 
-                        <!-- Question 2 -->
-                        <div class="accordion-item bg-black border-light">
-                            <h2 class="accordion-header" id="faqHeading2">
-                                <button class="accordion-button collapsed text-light bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
-                                    Where is the dinner being held?
-                                </button>
-                            </h2>
-                            <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body text-light bg-dark">
-                                    Dinner will take place at <strong>20:30</strong> in the main hall, following the ceremony.
-                                </div>
+                    <!-- Question 2 -->
+                    <div class="accordion-item bg-black border-light">
+                        <h2 class="accordion-header" id="faqHeading2">
+                            <button class="accordion-button collapsed text-light bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                                Where is the dinner being held?
+                            </button>
+                        </h2>
+                        <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body text-light bg-dark">
+                                Dinner will take place at <strong>20:30</strong> in the main hall, following the ceremony.
                             </div>
                         </div>
+                    </div>
 
-                        <!-- Question 3 -->
-                        <div class="accordion-item bg-black border-light">
-                            <h2 class="accordion-header" id="faqHeading3">
-                                <button class="accordion-button collapsed text-light bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
-                                    What should I wear?
-                                </button>
-                            </h2>
-                            <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body text-light bg-dark">
-                                    The dress code is <strong>formal</strong>. Feel free to dress comfortably but elegantly for the occasion.
-                                </div>
+                    <!-- Question 3 -->
+                    <div class="accordion-item bg-black border-light">
+                        <h2 class="accordion-header" id="faqHeading3">
+                            <button class="accordion-button collapsed text-light bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+                                What should I wear?
+                            </button>
+                        </h2>
+                        <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body text-light bg-dark">
+                                The dress code is <strong>formal</strong>. Feel free to dress comfortably but elegantly for the occasion.
                             </div>
                         </div>
+                    </div>
 
-                        <!-- Question 4 -->
-                        <div class="accordion-item bg-black border-light">
-                            <h2 class="accordion-header" id="faqHeading4">
-                                <button class="accordion-button collapsed text-light bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4">
-                                    Is parking available at the venue?
-                                </button>
-                            </h2>
-                            <div id="faqCollapse4" class="accordion-collapse collapse" aria-labelledby="faqHeading4" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body text-light bg-dark">
-                                    Yes, there is ample parking available at the venue. Please follow the signs to the parking lot.
-                                </div>
+                    <!-- Question 4 -->
+                    <div class="accordion-item bg-black border-light">
+                        <h2 class="accordion-header" id="faqHeading4">
+                            <button class="accordion-button collapsed text-light bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4">
+                                Is parking available at the venue?
+                            </button>
+                        </h2>
+                        <div id="faqCollapse4" class="accordion-collapse collapse" aria-labelledby="faqHeading4" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body text-light bg-dark">
+                                Yes, there is ample parking available at the venue. Please follow the signs to the parking lot.
                             </div>
                         </div>
                     </div>
@@ -562,24 +547,22 @@
         </section>
 
         <!-- End Of Invitation -->
-        <section class="dark-section pb-5">
-            <div class="container" style="margin-top: 200px;">
-                <div class="text-center">
-                    <p class="pt-2 pb-1 px-2" style="font-size: 1rem;">
-                        "Quate"
-                    </p>
-                    <hr class="mt-3 mb-2">
-                    <div class="row align-items-center justify-content-between flex-column flex-sm-row pb-3">
-                        <div class="col-auto">
-                            <small class="text-light">
-                                Build with <i class="fa-solid fa-heart mx-1"> </i> by Maria & Stefano
-                            </small>
-                        </div>
-                        <div class="col-auto">
-                            <small>
-                                <i class="fa-brands fa-github me-1"></i><a target="_blank" href="https://github.com/stemerlini">stemerlini</a>
-                            </small>
-                        </div>
+        <section class="end-section">
+            <div class="text-center">
+                <p class="pt-2 pb-1 px-2" style="font-size: 1rem;">
+                    "Quate"
+                </p>
+                <hr class="mt-3 mb-2">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row pb-3">
+                    <div class="col-auto">
+                        <small class="text-light">
+                            Built with <i class="fa-solid fa-heart mx-1"> </i> by Maria & Stefano
+                        </small>
+                    </div>
+                    <div class="col-auto">
+                        <small>
+                            <i class="fa-brands fa-github me-1"></i><a target="_blank" href="https://github.com/stemerlini">stemerlini</a>
+                        </small>
                     </div>
                 </div>
             </div>
@@ -597,7 +580,7 @@
                 <div id="game-container">
                     <!-- Mobile message will be shown instead of game -->
                     <div id="mobile-message" style="display: none; text-align: center; padding: 20px;">
-                        <p style="color: white;">Please visit on desktop to play the game!</p>
+                        <p class="font-esthetic mb-4" style="color: rgb(0, 0, 0);">Please visit on a desktop to play the game! 🕹️ </p>
                     </div>
                     <!-- Game canvas -->
                     <canvas id="game"></canvas>
@@ -610,7 +593,7 @@
                 <div id="guest-name" data-message=""></div> -->
 
                 <!-- Button Section -->
-                <button type="button" class="btn btn-light shadow rounded-4" style="margin-top: 100px;" onclick="guest.open(this)">
+                <button type="button" class="btn btn-light shadow rounded-4" style="margin-top: 20px;" onclick="guest.open(this)">
                     <i class="fa-solid fa-envelope-open me-2"></i>Open Invitation
                 </button>
 
@@ -628,19 +611,13 @@
         </div>
     </div>
 
-    <!-- Theme Button
-    <button type="button" id="button-theme" style="display: none;" class="btn bg-dark border border-2 btn-sm rounded-circle btn-theme" onclick="theme.change()">
-        <i class="fa-solid fa-circle-half-stroke"></i>
-    </button> -->
-
     <!-- Language button -->
     <button type="button" id="button-language" class="btn bg-dark border border-1 btn-lg rounded-circle btn-theme" onclick="language.switchLanguage()">
         <span id="language-flag" class="fi fi-gb"></span> <!-- Default Flag (English) -->
     </button>
      
-
     <!-- Loading Page -->
-    <div class="loading-page bg-black" id="loading" style="opacity: 1;">
+    <div class="loading-page" id="loading" style="opacity: 1;">
         <div class="d-flex justify-content-center align-items-center" style="height: 100vh !important;">
             <div class="w-75 text-center">
                 <img class="img-fluid mb-3" src="./assets/images/icon-192x192.png" alt="icon" style="width: 3.5rem;">
