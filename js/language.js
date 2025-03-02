@@ -15,21 +15,26 @@ const translations = {
         submit: "Submit",
         footer: "Thank you for being part of our special day!",
         // -----------------------------------------------------
+        InviteHeader: "Adventure Awaits... and Do We! 🌎",
+        InviteMessage: `We can't wait to celebrate with you! Whether you're near or far, your presence will make all the difference. 
+                        <br> Save the date — it won't be the same without you!`,
+        // -----------------------------------------------------
         headerTravel: "Useful Travel Information ✈️",
         gettingIn: "Getting In",
         gettingInDescription: "We recommend flying into <strong>Thessaloniki Airport 'Makedonia' (SKG)</strong>, conveniently located near the wedding venue.",
-        gettingToCity: "Getting into the City Center",
+        gettingToCity: "Going Around",
         gettingToCityDescription: `
-            - <strong>Car Rental:</strong> Affordable options available at the airport. Book early for the best rates. <br>
-            - <strong>Taxis:</strong> Approx. 10-15€ to nearby hotels and 20-30€ to the city center. <br>
-            - <strong>Bus:</strong> Bus Line 01X connects the airport to the city center for just 2€.
+           - <strong>Car Rental:</strong> Several car rental services are available online (e.g., Booking.com) and near the airport. Booking early ensures the best rates. <br>
+           - <strong>Taxis:</strong> Taxis are widely available across the city. For convenience, we recommend using the <strong>FREE NOW</strong> app or  <strong>Uber</strong>. The licensed taxis can be recognised by their blue color. <br>
+           - <strong>Bus:</strong> Bus Line 01X connects the airport to the city center for just <strong>€2</strong>, making it an affordable and efficient option.
         `,
         accommodations: "Accommodation Options",
         accommodationsDescription: `
             <strong>Hotels Near the Venue:</strong> <br>
-            - <a href="https://www.avalonhotel.gr/" target="_blank" class="text-decoration-underline">Avalon Hotel Thessaloniki</a>: Located 3 km from the airport, offering comfort, a pool, and free parking. <br>
-            - <a href="https://www.athinaairporthotel.gr/" target="_blank" class="text-decoration-underline">Athina Airport Hotel</a>: Modern amenities, restaurant, and spa close to the airport. <br>
-            - <a href="https://www.royal-hotel.gr/" target="_blank" class="text-decoration-underline">Royal Hotel Thessaloniki</a>: Luxurious boutique hotel with stunning views, 5 km from the venue.
+            - <a href="https://www.avalonhotel.gr/" target="_blank" class="text-decoration-underline">Avalon Hotel Thessaloniki</a>: Located 3 km from the airport and 10 minutes walk from the vanue. <br>
+            - <a href="https://airhotelathina.gr" target="_blank" class="text-decoration-underline">Athina Airport Hotel</a>: Located 5 minutes walking distance from the vanue. <br>
+            - <a href="https://irishotel.net" target="_blank" class="text-decoration-underline">Iris Hotel</a>: Located 8 minutes walk from the vanue. <br>
+            - <a href="https://www.hyatt.com/hyatt-regency/en-US/thess-hyatt-regency-thessaloniki/" target="_blank" class="text-decoration-underline">Hyatt Regency Hotel</a>: Located near the airport at 3 km from the vanue. Groom and Bride's residence.
         `,
         thingsToDo: "Things to Do",
         thingsToDoDescription: `
@@ -42,17 +47,19 @@ const translations = {
         foodAndDrinks: "Food and Drinks",
         foodAndDrinksDescription: `
             - <strong>Trigona Panorama:</strong> Don’t miss Thessaloniki’s signature cream-filled pastries. <br>
-            - <strong>Nea Diagonios:</strong> Known for the best gyros and souvlaki. <br>
-            - <strong>To Elliniko:</strong> Authentic Greek cuisine in a cozy atmosphere. <br>
+            - <strong>Bougatsa:</strong> A delicious filo pastry pie made either sweet with semolina-cream or savoury with cheese or mince <br>
+            - <strong>Koulouri:</strong> A sesame seed-covered bread ring sold on bakeries and street corners. <br>
+            - <strong>Souvlaki:</strong> Chicken or pork on skewers with chopped tomato, tzatziki, onions and fries <br>
+            - <strong>Pita Gyros:</strong> Authentic gyros in a pita with chopped tomato, tzatziki, onions and fries (Groom's suggestion: ask for Tirokafteri!). <br>
+            For more information: <a href="https://www.discovergreece.com/travel-ideas/cover-story/foodie-guide-thessaloniki" target="_blank" class="text-decoration-underline"> Click Here </a>
         `,
         venueDetails: "Wedding Venue",
         venueDetailsDescription: `
             <strong>Ktima Mironidi</strong> is the wedding venue, located near the airport for your convenience. Enjoy a tranquil and scenic location for the big day!
         `,
         giftHeader: "Gift? Don't Panic!",
-        giftMainMessage: "Your presence at our wedding is the most precious gift we could ever ask for.",
-        giftContributionMessage: "However, if you’d like to contribute, we’ve provided a few bank account options to support our honeymoon plans. ✈️✨",
-        giftThankYou: "Thank you for being part of our special day!"
+        giftMainMessage: "Your presence at our wedding is the greatest gift of all. If it is your wish to bless us with a gift, we would greatly appreciate a contribution for our dream honeymoon destination. ✈️",
+        giftThankYou: "We look forward to celebrating our wedding day with you! ❤️"
     },
 
     it: {
