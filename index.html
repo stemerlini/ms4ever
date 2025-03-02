@@ -637,17 +637,22 @@
             </div>
             
             <div class="modal-body">
-
                 <form id="rsvp-form">
-                    
+                    <!-- this is just to fix the bug with the guest function  -->
+                    <input type="text" class="form-control" id="guest-name" name="name" 
+                               data-translate="inputFullName" placeholder="Enter your full name" hidden>
+                    <!-- Form information starts here -->
                     <div class="mb-3">
                         <label for="guest-name" data-translate="fullName">Your Full Name</label>
-                        <input type="text" class="form-control" id="guest-name" name="name" data-translate="inputFullName" placeholder="Enter your full name" required>
+                        <input type="text" class="form-control" id="guest-name" name="name" 
+                               data-translate="inputFullName" placeholder="Enter your full name" required>
                     </div>
-
+            
+                    <!-- Email section (already correct) -->
                     <div class="mb-3">
                         <label for="guest-email" data-translate="email">Email</label>
-                        <input type="text" class="form-control" id="guest-email" name="email" data-translate="inputEmail" placeholder="Enter your email" required>
+                        <input type="text" class="form-control" id="guest-email" name="email" 
+                               data-translate="inputEmail" placeholder="Enter your email" required>
                     </div>
                                     
                     <div class="mb-3">
@@ -667,7 +672,7 @@
                     <div class="mb-3">
                         <label for="guest-count" data-translate="guestCount">How many people will be attending with you?</label>
                         <select class="form-control" id="guest-count" name="guest_count">
-                            <option value="">Select</option>
+                            <option value="" data-translate="selection">Select</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -680,18 +685,17 @@
                 
                     <div class="mb-3">
                         <label for="dietary-restrictions" data-translate="dietaryRestrictions">Dietary Restrictions or Allergies</label>
-                        <input type="text" class="form-control" id="dietary-restrictions" name="dietary_restrictions" placeholder="Specify any restrictions">
+                        <input type="text" class="form-control" id="dietary-restrictions" placeholder="Specify any restrictions">
                     </div>
                 
                     <div class="mb-3">
                         <label for="message" data-translate="songRequest">Song Requests</label>
-                        <textarea class="form-control" id="message" name="song_request" rows="3" data-translate="inputsongRequest" placeholder="What song will get you dancing on the big day?"></textarea>
+                        <textarea class="form-control" id="message" name="song_request" rows="3" placeholder="What song will get you dancing on the big day?"></textarea>
                     </div>
                     
                     <div id="alert-wrapper" class="mb-3"></div>
                     <button type="submit" data-translate="submit" class="btn btn-primary w-100">Submit</button>
                 </form>
-                
             </div>
           </div>
         </div>
