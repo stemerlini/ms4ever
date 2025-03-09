@@ -183,10 +183,10 @@ const translations = {
         accommodations: "Επιλογές Διαμονής",
         accommodationsDescription: `
             <strong>Κοντινά ξενοδοχεία:</strong> <br>
-            - <a href="https://www.avalonhotel.gr/" target="_blank" class="text-decoration-underline">Avalon Hotel Θεσσαλονίκης</a>: 3 χλμ από το αεροδρόμιο και 10 λεπτά με τα πόδια από τον χώρο. <br>
-            - <a href="https://airhotelathina.gr" target="_blank" class="text-decoration-underline">Athina Airport Hotel</a>: 5 λεπτά με τα πόδια από τον χώρο. <br>
-            - <a href="https://irishotel.net" target="_blank" class="text-decoration-underline">Iris Hotel</a>: 8 λεπτά με τα πόδια από τον χώρο. <br>
-            - <a href="https://www.hyatt.com/hyatt-regency/en-US/thess-hyatt-regency-thessaloniki/" target="_blank" class="text-decoration-underline">Hyatt Regency Hotel</a>: 3 χλμ από το αεροδρόμιο. Κατοικία νυφού και γαμπρού.
+            - <a href="https://www.avalonhotel.gr/" target="_blank" class="text-decoration-underline">Avalon Hotel Θεσσαλονίκης</a>: 3 χλμ από το αεροδρόμιο και 10 λεπτά με τα πόδια από το κτήμα. <br>
+            - <a href="https://airhotelathina.gr" target="_blank" class="text-decoration-underline">Athina Airport Hotel</a>: 5 λεπτά με τα πόδια από το κτήμα. <br>
+            - <a href="https://irishotel.net" target="_blank" class="text-decoration-underline">Iris Hotel</a>: 8 λεπτά με τα πόδια από το κτήμα. <br>
+            - <a href="https://www.hyatt.com/hyatt-regency/en-US/thess-hyatt-regency-thessaloniki/" target="_blank" class="text-decoration-underline">Hyatt Regency Hotel</a>: 3 χλμ από το αεροδρόμιο. Διαμονή νύφης και γαμπρού.
         `,
         thingsToDo: "Αξιοθέατα & Δραστηριότητες",
         thingsToDoDescription: `
