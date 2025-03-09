@@ -64,59 +64,75 @@ const translations = {
 
     it: {
         flagClass: 'fi fi-it', // Italian flag
-        header: "Benvenuti al nostro matrimonio",
+        header: "Benvenuti al Nostro Matrimonio",
         rsvpTitle: "RSVP",
-        fullName: "Il tuo nome completo",
-        inputFullName: "Inserisci il tuo nome",
+        fullName: "Nome e Cognome",
+        inputFullName: "Inserisci il tuo nome e cognome",
         willYouAttend: "Parteciperai?",
+        Data: "Sabato, 20 Settembre 2025",
+        PartyHeader: "Giorni rimanenti alla festa 🎉",
+        VanueHeader: "La Location",
         yes: "Sì",
         no: "No",
-        selection: "Seleziona", 
-        guestCount: "Quanti ospiti aggiuntivi parteciperanno con te?",
-        dietaryRestrictions: "Restrizioni dietetiche o allergie",
-        songRequest: "Richieste musicali",
-        inputsongRequest: "Quale canzone ti fara' ballare?",
+        guestCount: "Quanti ospiti aggiuntivi verranno con te?",
+        dietaryRestrictions: "Restrizioni Dietetiche o Allergie",
+        songRequest: "Richieste Musicali",
         submit: "Conferma",
         footer: "Grazie per essere parte del nostro giorno speciale!",
-        // -------------------------------------------------------------
-        headerTravel: "Informazioni di viaggio utili ✈️",
-        gettingIn: "Arrivare",
-        gettingInDescription: "Ti consigliamo di volare all'Aeroporto di Salonicco 'Macedonia' (SKG), situato vicino alla sede del matrimonio.",
-        gettingToCity: "Arrivare in centro città",
+        // -----------------------------------------------------
+        InviteHeader: "L'Avventura aspetta... E Anche Noi! 🌎",
+        InviteMessage: `Non vediamo l'ora di festeggiare con voi! Sia che siate vicini o lontani, la vostra presenza farà la differenza. <br>
+                        Segnate la data — non sarà lo stesso senza di voi!`,
+        // -----------------------------------------------------
+        headerTravel: "Informazioni Utili per il Viaggio ✈️",
+        gettingIn: "Arrivo",
+        gettingInDescription: "Vi consigliamo di volare all'<strong>Aeroporto di Salonicco 'Macedonia' (SKG)</strong>, situato vicino alla location del matrimonio.",
+        gettingToCity: "Muoversi in Città",
         gettingToCityDescription: `
-            - <strong>Noleggio auto:</strong> Opzioni economiche disponibili in aeroporto. Prenota in anticipo per le migliori tariffe. <br>
-            - <strong>Taxi:</strong> Circa 10-15€ per raggiungere gli hotel vicini e 20-30€ per il centro città. <br>
-            - <strong>Autobus:</strong> La Linea 01X collega l'aeroporto al centro città per soli 2€.
+           - <strong>Noleggio Auto:</strong> Servizi di noleggio auto disponibili online (es. Booking.com) e nei dintorni dell'aeroporto. Prenotare in anticipo così da assicurarsi le tariffe migliori. <br>
+           - <strong>Taxi:</strong> I taxi sono ampiamente disponibili in città. Per comodità, consigliamo l'app <strong>FREE NOW</strong> o <strong>Uber</strong>. I taxi ufficiali sono riconoscibili dal colore blu. <br>
+           - <strong>Autobus:</strong> La linea 01X collega l'aeroporto al centro città per soli <strong>€2</strong>.
         `,
-        accommodations: "Alloggi",
+        accommodations: "Opzioni di Alloggio",
         accommodationsDescription: `
-            <strong>Hotel vicino alla sede:</strong> <br>
-            - <a href="https://www.avalonhotel.gr/" target="_blank" class="text-decoration-underline">Avalon Hotel Salonicco</a>: Situato a 3 km dall'aeroporto, offre comfort, una piscina e parcheggio gratuito. <br>
-            - <a href="https://www.athinaairporthotel.gr/" target="_blank" class="text-decoration-underline">Athina Airport Hotel</a>: Moderno con ristorante e spa vicino all'aeroporto. <br>
-            - <a href="https://www.royal-hotel.gr/" target="_blank" class="text-decoration-underline">Royal Hotel Thessaloniki</a>: Boutique hotel di lusso con viste mozzafiato, a 5 km dalla sede.
+            <strong>Hotel Vicini alla Location:</strong> <br>
+            - <a href="https://www.avalonhotel.gr/" target="_blank" class="text-decoration-underline">Avalon Hotel Salonicco</a>: 3 km dall'aeroporto e 10 minuti a piedi dalla location. <br>
+            - <a href="https://airhotelathina.gr" target="_blank" class="text-decoration-underline">Athina Airport Hotel</a>: 5 minuti a piedi dalla location. <br>
+            - <a href="https://irishotel.net" target="_blank" class="text-decoration-underline">Iris Hotel</a>: 8 minuti a piedi dalla location. <br>
+            - <a href="https://www.hyatt.com/hyatt-regency/en-US/thess-hyatt-regency-thessaloniki/" target="_blank" class="text-decoration-underline">Hyatt Regency Hotel</a>: 3 km dall'aeroporto. Residenza degli sposi.
         `,
-        thingsToDo: "Cose da fare a Salonicco",
+        thingsToDo: "Cose da Fare",
         thingsToDoDescription: `
-            - <strong>Torre Bianca:</strong> Il simbolo di Salonicco con una vista panoramica. <br>
+            - <strong>La Torre Bianca:</strong> Il simbolo di Salonicco. <br>
             - <strong>Piazza Aristotele:</strong> Il cuore della città con caffè e negozi. <br>
-            - <strong>Ano Poli:</strong> Passeggia nelle stradine acciottolate con viste incredibili. <br>
-            - <strong>La lunga passeggiata sul mare:</strong> Perfetta per una passeggiata al tramonto. <br>
-            - <strong>Museo Archeologico di Salonicco:</strong> Scopri la storia della Macedonia. <br>
+            - <strong>Ano Poli:</strong> Esplorate le strade acciottolate e godetevi la vista sulla città. <br>
+            - <strong>Lungomare:</strong> Perfetto per una passeggiata al tramonto. <br>
+            - <strong>Museo Archeologico di Salonicco:</strong> Scoprite la ricca storia della Macedonia. <br>
         `,
-        foodAndDrinks: "Cibo e bevande",
+        foodAndDrinks: "Gastronomia",
         foodAndDrinksDescription: `
-            - <strong>Trigona Panorama:</strong> Non perdere i dolci triangolari ripieni di crema. <br>
-            - <strong>Nea Diagonios:</strong> Conosciuto per i migliori gyros e souvlaki. <br>
-            - <strong>To Elliniko:</strong> Cucina greca autentica in un'atmosfera accogliente. <br>
+            - <strong>Trigona Panoramatos:</strong> Il dolce tipico di Salonicco con crema. <br>
+            - <strong>Bougatsa:</strong> Sfoglia ripiena di crema dolce di semolino o salata con formaggio e/o carne macinata. <br>
+            - <strong>Koulouri:</strong> Ciambella di pane ricoperta di semi di sesamo, venduta nei panifici e per strada. <br>
+            - <strong>Souvlaki:</strong> Spiedini di pollo o maiale con pomodoro, tzatziki, cipolla e patatine. <br>
+            - <strong>Gyros:</strong> Gyros autentico in pita con pomodoro, tzatziki, cipolla e patatine (Suggerimento dello sposo: chiedete Tirokafteri!). <br>
+            Per maggiori informazioni: <a href="https://www.discovergreece.com/it/travel-ideas/cover-story/foodie-guide-thessaloniki" target="_blank" class="text-decoration-underline">Clicca Qui</a>
         `,
-        venueDetails: "Dettagli della sede",
+        venueDetails: "Location del Matrimonio",
         venueDetailsDescription: `
-            <strong>Ktima Mironidi</strong> è la sede del matrimonio, situata vicino all'aeroporto per la tua comodità. Goditi un'ambientazione tranquilla e panoramica per il grande giorno!
+            <strong>Ktima Mironidi</strong> è la location del matrimonio.
         `,
-        giftHeader: "Regalo? Don't Panic!",
-        giftMainMessage: "La tua presenza al nostro matrimonio è il dono più prezioso che potremmo mai desiderare.",
-        giftContributionMessage: "Tuttavia, se desideri contribuire, abbiamo fornito alcune opzioni di conto bancario per supportare i nostri piani per la luna di miele. ✈️✨",
-        giftThankYou: "Grazie per aver fatto parte del nostro giorno speciale!"
+        giftHeader: "Regali? Non Preoccupatevi!",
+        giftMainMessage: "La vostra presenza al nostro matrimonio è il regalo più grande che potremmo desiderare. Se però volete farci un pensiero, gradiremmo molto un contributo per la nostra destinazione da sogno per la luna di miele. ✈️",
+        giftThankYou: "Non vediamo l'ora di festeggiare con voi il nostro giorno speciale! ❤️",
+        faq1: "A che ora inizia la cerimonia?",
+        faq1answer: `La cerimonia inizierà alle <strong>20:00</strong>. Vi preghiamo di arrivare prima, entro le 19:30.`,
+        faq2: "Dove si terrà la cena?",
+        faq2answer: "La cena si terrà alle <strong>21:30</strong>, dopo la cerimonia e l'ora del cocktail.",
+        faq3: "Cosa devo indossare?",
+        faq3answer: "Il dress code è <strong>formale</strong>. Sentitevi liberi di vestirvi comodi ma eleganti per l'occasione.",
+        faq4: "C'è parcheggio disponibile presso la location?",
+        faq4answer: "Sì, c'è ampio parcheggio disponibile presso la location."
     },
 
     el: {
