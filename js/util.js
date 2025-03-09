@@ -73,6 +73,24 @@ export const util = (() => {
         storage('information').set('info', true);
     };
 
+     // Clipboard copy function
+    const copy = (element, successText) => {
+        const textToCopy = element.getAttribute('data-copy');
+        try { 
+            navigator.clipboard.writeText(textToCopy);
+            // Visual feedback
+            const originalText = element.innerHTML;
+            element.innerHTML = successText;
+        
+            // Revert text after 2 seconds
+            setTimeout(() => {
+                element.innerHTML = originalText;
+            }, 2000);
+        } catch (err) {
+            alert('Failed to copy: ' + err.message);
+        }
+    }
+
     return {
         close,
         modal,
@@ -81,5 +99,6 @@ export const util = (() => {
         escapeHtml,
         disableButton,
         addLoadingCheckbox,
+        copy
     }
 })();

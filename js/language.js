@@ -15,7 +15,7 @@ const translations = {
         submit: "Submit",
         footer: "Thank you for being part of our special day!",
         // -----------------------------------------------------
-        InviteHeader: "Adventure Awaits... and Do We! 🌎",
+        InviteHeader: "Adventure Awaits... and so Do We! 🌎",
         InviteMessage: `We can't wait to celebrate with you! Whether you're near or far, your presence will make all the difference. 
                         <br> Save the date — it won't be the same without you!`,
         // -----------------------------------------------------
@@ -26,7 +26,7 @@ const translations = {
         gettingToCityDescription: `
            - <strong>Car Rental:</strong> Several car rental services are available online (e.g., Booking.com) and near the airport. Booking early ensures the best rates. <br>
            - <strong>Taxis:</strong> Taxis are widely available across the city. For convenience, we recommend using the <strong>FREE NOW</strong> app or  <strong>Uber</strong>. The licensed taxis can be recognised by their blue color. <br>
-           - <strong>Bus:</strong> Bus Line 01X connects the airport to the city center for just <strong>€2</strong>, making it an affordable and efficient option.
+           - <strong>Bus:</strong> Bus Line 01X connects the airport to the city center, costing <strong>€2</strong>.
         `,
         accommodations: "Accommodation Options",
         accommodationsDescription: `
@@ -121,59 +121,75 @@ const translations = {
 
     el: {
         flagClass: 'fi fi-gr', // Greek flag
-        header: "Καλώς ήρθατε στον γάμο μας",
-        rsvpTitle: "RSVP",
-        fullName: "Το πλήρες όνομά σας",
-        inputFullName: "Το όνομά σας",
-        willYouAttend: "Θα παρευρεθείτε;",
+        header: "Καλώς Ορίσατε στον Γάμο Μας",
+        rsvpTitle: "Επιβεβαίωση Συμμετοχής",
+        fullName: "Ονοματεπώνυμο",
+        inputFullName: "Συμπληρώστε το ονοματεπώνυμό σας",
+        willYouAttend: "Θα παραβρεθείτε;",
+        Data: "Σάββατο, 20 Σεπτεμβρίου 2025",
+        PartyHeader: "Μέρες που απομένουν μέχρι το πάρτι 🎉",
+        VanueHeader: "Η τοποθεσία",
         yes: "Ναι",
         no: "Όχι",
-        selection: "επιλέγω",
-        guestCount: "Πόσοι επιπλέον καλεσμένοι θα σας συνοδεύσουν;",
-        dietaryRestrictions: "Διατροφικοί περιορισμοί ή αλλεργίες",
-        songRequest: "Αιτήματα τραγουδιών",
-        inputsongRequest: "Τι τραγούδι θα θέλατε να χορέψετε;",
+        guestCount: "Πόσοι επιπλέον καλεσμένοι θα σας συνοδεύουν;",
+        dietaryRestrictions: "Διατροφικοί Περιορισμοί ή Αλλεργίες",
+        songRequest: "Μουσικά Αιτήματα",
         submit: "Υποβολή",
-        footer: "Ευχαριστούμε που είστε μέρος της ξεχωριστής μας ημέρας!",
-        // -----------------------------------------------------------------
-        headerTravel: "Χρήσιμες Πληροφορίες Ταξιδιού ✈️",
-        gettingIn: "Άφιξη",
-        gettingInDescription: "Σας προτείνουμε να πετάξετε στο Αεροδρόμιο 'Μακεδονία' της Θεσσαλονίκης (SKG), που βρίσκεται κοντά στο χώρο της δεξίωσης.",
-        gettingToCity: "Πρόσβαση στο Κέντρο της Πόλης",
+        footer: "Σας ευχαριστούμε που είστε μέρος της ξεχωριστής μας μέρας!",
+        // -----------------------------------------------------
+        InviteHeader: "Η Περιπέτεια Περιμένει... Και Εμείς Επίσης!🌎",
+        InviteMessage: `Ανυπομονούμε να γιορτάσουμε μαζί σας! Είτε είστε κοντά είτε μακριά, η παρουσία σας κάνει τη διαφορά. <br>
+                        Κρατήστε την ημερομηνία — δεν θα είναι το ίδιο χωρίς εσάς!`,
+        // -----------------------------------------------------
+        headerTravel: "Χρήσιμες Πληροφορίες Μετακίνησης ✈️",
+        gettingIn: "Μετάβαση",
+        gettingInDescription: "Σας συνιστούμε να πετάξετε προς το <strong>Αεροδρόμιο Θεσσαλονίκης 'Μακεδονία' (SKG)</strong>, το οποίο βρίσκεται κοντά στον χώρο του γάμου.",
+        gettingToCity: "Μετακίνηση στην Πόλη",
         gettingToCityDescription: `
-            - <strong>Ενοικίαση Αυτοκινήτου:</strong> Προσιτές επιλογές διαθέσιμες στο αεροδρόμιο. Κάντε κράτηση εκ των προτέρων για τις καλύτερες τιμές. <br>
-            - <strong>Ταξί:</strong> Περίπου 10-15€ για τα κοντινά ξενοδοχεία και 20-30€ για το κέντρο της πόλης. <br>
-            - <strong>Λεωφορείο:</strong> Η γραμμή 01Χ συνδέει το αεροδρόμιο με το κέντρο της πόλης με μόνο 2€.
+           - <strong>Ενοικίαση Αυτοκινήτου:</strong> Διαθέσιμες online υπηρεσίες (π.χ. Booking.com) και στον περιβάλλοντα χώρο του αεροδρομίου. Προνοητική κράτηση εγγυάται καλύτερες τιμές. <br>
+           - <strong>Ταξί:</strong> Ευρέως διαθέσιμα στην πόλη. Για ευκολία, προτείνουμε την εφαρμογή <strong>FREE NOW</strong> ή <strong>Uber</strong>. Τα επίσημα ταξί αναγνωρίζονται από το μπλε χρώμα τους. <br>
+           - <strong>Λεωφορείο:</strong> Η γραμμή 01X συνδέει το αεροδρόμιο με το κέντρο της πόλης με κόστος <strong>€2</strong>.
         `,
-        accommodations: "Διαμονή",
+        accommodations: "Επιλογές Διαμονής",
         accommodationsDescription: `
-            <strong>Ξενοδοχεία κοντά στο χώρο της δεξίωσης:</strong> <br>
-            - <a href="https://www.avalonhotel.gr/" target="_blank" class="text-decoration-underline">Avalon Hotel Thessaloniki</a>: Τοποθετημένο 3 χλμ από το αεροδρόμιο, με άνετα δωμάτια, πισίνα και δωρεάν πάρκινγκ. <br>
-            - <a href="https://www.athinaairporthotel.gr/" target="_blank" class="text-decoration-underline">Athina Airport Hotel</a>: Μοντέρνο ξενοδοχείο με εστιατόριο και σπα κοντά στο αεροδρόμιο. <br>
-            - <a href="https://www.royal-hotel.gr/" target="_blank" class="text-decoration-underline">Royal Hotel Thessaloniki</a>: Μπουτίκ ξενοδοχείο πολυτελείας με εκπληκτική θέα, 5 χλμ από το χώρο δεξίωσης.
+            <strong>Κοντινά ξενοδοχεία:</strong> <br>
+            - <a href="https://www.avalonhotel.gr/" target="_blank" class="text-decoration-underline">Avalon Hotel Θεσσαλονίκης</a>: 3 χλμ από το αεροδρόμιο και 10 λεπτά με τα πόδια από τον χώρο. <br>
+            - <a href="https://airhotelathina.gr" target="_blank" class="text-decoration-underline">Athina Airport Hotel</a>: 5 λεπτά με τα πόδια από τον χώρο. <br>
+            - <a href="https://irishotel.net" target="_blank" class="text-decoration-underline">Iris Hotel</a>: 8 λεπτά με τα πόδια από τον χώρο. <br>
+            - <a href="https://www.hyatt.com/hyatt-regency/en-US/thess-hyatt-regency-thessaloniki/" target="_blank" class="text-decoration-underline">Hyatt Regency Hotel</a>: 3 χλμ από το αεροδρόμιο. Κατοικία νυφού και γαμπρού.
         `,
-        thingsToDo: "Δραστηριότητες στη Θεσσαλονίκη",
+        thingsToDo: "Αξιοθέατα & Δραστηριότητες",
         thingsToDoDescription: `
-            - <strong>Λευκός Πύργος:</strong> Το σύμβολο της Θεσσαλονίκης με πανοραμική θέα. <br>
-            - <strong>Πλατεία Αριστοτέλους:</strong> Το κεντρικό σημείο της πόλης με καφετέριες και καταστήματα. <br>
-            - <strong>Άνω Πόλη:</strong> Εξερευνήστε τα πλακόστρωτα σοκάκια και απολαύστε εκπληκτική θέα. <br>
-            - <strong>Μακρύς Περίπατος στη Θάλασσα:</strong> Ιδανικός για βόλτα στο ηλιοβασίλεμα. <br>
-            - <strong>Αρχαιολογικό Μουσείο Θεσσαλονίκης:</strong> Γνωρίστε την ιστορία της Μακεδονίας. <br>
+            - <strong>Ο Λευκός Πύργος:</strong> Το σύμβολο της Θεσσαλονίκης. <br>
+            - <strong>Πλατεία Αριστοτέλους:</strong> Η καρδιά της πόλης με καφέ και καταστήματα. <br>
+            - <strong>Άνω Πόλη:</strong> Εξερευνήστε τα πεζοδρόμια και απολαύστε τη θέα. <br>
+            - <strong>Παραλιακό:</strong> Ιδανικός για ένα ρομαντικό περίπατο κατά τη δύση του ηλίου. <br>
+            - <strong>Αρχαιολογικό Μουσείο Θεσσαλονίκης:</strong> Ανακαλύψτε την πλούσια ιστορία της Μακεδονίας. <br>
         `,
-        foodAndDrinks: "Φαγητό και Ποτά",
+        foodAndDrinks: "Γαστρονομία",
         foodAndDrinksDescription: `
-            - <strong>Trigona Panorama:</strong> Δοκιμάστε τα διάσημα τρίγωνα με γέμιση κρέμας. <br>
-            - <strong>Nea Diagonios:</strong> Φημισμένο για το καλύτερο γύρο και σουβλάκι. <br>
-            - <strong>To Elliniko:</strong> Αυθεντική ελληνική κουζίνα σε ζεστό περιβάλλον. <br>
+            - <strong>Τρίγωνα Πανόραμα:</strong> Το σήμα κατατεθέν γλυκό της Θεσσαλονίκης με κρέμα. <br>
+            - <strong>Μπουγάτσα:</strong> Σφολιάτα γεμιστή με γλυκό κρέμα σιμιγδάλι ή αλμυρή με τυρί ή κιμά. <br>
+            - <strong>Κουλούρι:</strong> Δαχτυλίδι ψωμιού καλυμμένο με σουσάμι, πωλείται σε φούρνους και πεζοδρόμια. <br>
+            - <strong>Σουβλάκι:</strong> Κομματάκια κοτόπουλο ή χοιρινό με ντομάτα, τζατζίκι, κρεμμύδι και πατάτες. <br>
+            - <strong>Γύρος:</strong> Αυθεντικός γύρος σε πίτα με ντομάτα, τζατζίκι, κρεμμύδι και πατάτες (Πρόταση, γαμπρού: ζητήστε Τυροκαυτερή!). <br>
+            Περισσότερες πληροφορίες: <a href="https://www.discovergreece.com/travel-ideas/cover-story/foodie-guide-thessaloniki" target="_blank" class="text-decoration-underline">Κάντε Κλικ Εδώ</a>
         `,
-        venueDetails: "Πληροφορίες Χώρου",
+        venueDetails: "Χώρος Γάμου",
         venueDetailsDescription: `
-            <strong>Ktima Mironidi</strong> είναι ο χώρος της δεξίωσης, κοντά στο αεροδρόμιο για δική σας διευκόλυνση. Απολαύστε ένα ήρεμο και γραφικό περιβάλλον για τη μεγάλη ημέρα!
+            <strong>Κτήμα Μυρωνίδη</strong> είναι ο χώρος του γάμου, κοντά στο αεροδρόμιο για τη διευκόλυνσή σας. Απολαύστε ένα γαλήνιο και γραφικό περιβάλλον για τη μεγάλη μέρα!
         `,
-        giftHeader: "Δώρο; Don't Panic!",
-        giftMainMessage: "Η παρουσία σας στο γάμο μας είναι το πιο πολύτιμο δώρο που θα μπορούσαμε να ζητήσουμε.",
-        giftContributionMessage: "Ωστόσο, αν θέλετε να συμβάλετε, έχουμε παρέχει κάποιες επιλογές τραπεζικών λογαριασμών για να στηρίξετε τα σχέδια του μήνα του μέλιτος μας. ✈️✨",
-        giftThankYou: "Σας ευχαριστούμε που είστε μέρος της ξεχωριστής ημέρας μας!"
+        giftHeader: "Δώρα; Μην Ανησυχείτε!",
+        giftMainMessage: "Η παρουσία σας στον γάμο μας είναι το μεγαλύτερο δώρο απ' όλα. Αν θέλετε να μας προσφέρετε ένα δώρο, θα μας χαροποιούσε ιδιαίτερα μια συνεισφορά για το ταξίδι του ονείρου μας στον μήνα του μέλιτος. ✈️",
+        giftThankYou: "Ανυπομονούμε να γιορτάσουμε την ημέρα του γάμου μας μαζί σας! ❤️",
+        faq1: "Τι ώρα ξεκινά η τελετή;",
+        faq1answer: `Η τελετή θα ξεκινήσει στις <strong> 20:00 </strong>. Παρακαλούμε να φτάσετε νωρίτερα, από τις 19:30.`,
+        faq2: "Πού θα πραγματοποιηθεί το δείπνο;",
+        faq2answer: "Το δείπνο θα πραγματοποιηθεί στις <strong>21:30</strong>, μετά την τελετή και την ώρα κοκτέιλ.",
+        faq3: "Τι πρέπει να φορέσω;",
+        faq3answer: "Ο κωδικός ενδυμασίας είναι <strong>επίσημος</strong>. Μη διστάσετε να ντυθείτε άνετα αλλά κομψά για αυτή την περίσταση.",
+        faq4: "Υπάρχει χώρος στάθμευσης στον χώρο της εκδήλωσης;",
+        faq4answer: "Ναι, υπάρχει άφθονος χώρος στάθμευσης στον χώρο της εκδήλωσης."
     },
 };
 

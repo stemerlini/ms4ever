@@ -68,7 +68,7 @@
     overflow: hidden;
     text-align: center;
     padding: 0;
-    background: url('/assets/images/us-transparent.png') no-repeat center center;
+    /* background: url('/assets/images/us-transparent.png') no-repeat center center; */
     background-size: 35%; /* Ensures full coverage */
     background-attachment: fixed; /* Optional parallax effect */
     background-color: var(--bs-gray-100);
