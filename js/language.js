@@ -7,6 +7,9 @@ const translations = {
         fullName: "Your Full Name",
         inputFullName: "Enter your full name",
         willYouAttend: "Will you attend?",
+        Data: "Saturday, 20 September 2025",
+        PartyHeader: "Days left before the party 🎉",
+        VanueHeader: "The Venue",
         yes: "Yes",
         no: "No",
         guestCount: "How many additional guests will be attending with you?",
@@ -59,7 +62,15 @@ const translations = {
         `,
         giftHeader: "Gift? Don't Panic!",
         giftMainMessage: "Your presence at our wedding is the greatest gift of all. If it is your wish to bless us with a gift, we would greatly appreciate a contribution for our dream honeymoon destination. ✈️",
-        giftThankYou: "We look forward to celebrating our wedding day with you! ❤️"
+        giftThankYou: "We look forward to celebrating our wedding day with you! ❤️",
+        faq1: "What time does the ceremony start?",
+        faq1answer: `The ceremony will begin at <string> 20:00 </string>. Kindly arrive earlier, starting from 19:30.`,
+        faq2: "Where is the dinner being held?",
+        faq2answer: "Dinner will take place at <strong>21:30</strong>, following the ceremony and the cocktail hour.",
+        faq3: "What should I wear?",
+        faq3answer: "The dress code is <strong>formal</strong>. Feel free to dress comfortably but elegantly for the occasion.",
+        faq4: "Is parking available at the venue?",
+        faq4answer: "Yes, there is ample parking available at the venue."
     },
 
     it: {
