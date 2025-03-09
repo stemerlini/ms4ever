@@ -3,6 +3,7 @@ const translations = {
     en: {
         flagClass: 'fi fi-gb', // English flag (Great Britain)
         header: "Welcome to Our Wedding",
+        ActionRSVP: "Please confirm your attendance by clicking the button below! 👇🏻",
         rsvpTitle: "RSVP",
         fullName: "Your Full Name",
         inputFullName: "Enter your full name",
@@ -19,7 +20,7 @@ const translations = {
         footer: "Thank you for being part of our special day!",
         // -----------------------------------------------------
         InviteHeader: "Adventure Awaits... and so Do We! 🌎",
-        InviteMessage: `We can't wait to celebrate with you! Whether you're near or far, your presence will make all the difference. 
+        InviteMessage: `We can't wait to celebrate with you! Whether you're near or far, your presence will make all the difference! 
                         <br> Save the date — it won't be the same without you!`,
         // -----------------------------------------------------
         headerTravel: "Useful Travel Information ✈️",
@@ -53,7 +54,7 @@ const translations = {
             - <strong>Bougatsa:</strong> A delicious filo pastry pie made either sweet with semolina-cream or savoury with cheese or mince <br>
             - <strong>Koulouri:</strong> A sesame seed-covered bread ring sold on bakeries and street corners. <br>
             - <strong>Souvlaki:</strong> Chicken or pork on skewers with chopped tomato, tzatziki, onions and fries <br>
-            - <strong>Pita Gyros:</strong> Authentic gyros in a pita with chopped tomato, tzatziki, onions and fries (Groom's suggestion: ask for Tirokafteri!). <br>
+            - <strong>Pita Gyros:</strong> Authentic gyros in a pita with chopped tomato, onions and fries (Groom's suggestion: ask for Tirokafteri!). <br>
             For more information: <a href="https://www.discovergreece.com/travel-ideas/cover-story/foodie-guide-thessaloniki" target="_blank" class="text-decoration-underline"> Click Here </a>
         `,
         venueDetails: "Wedding Venue",
@@ -77,6 +78,7 @@ const translations = {
         flagClass: 'fi fi-it', // Italian flag
         header: "Benvenuti al Nostro Matrimonio",
         rsvpTitle: "RSVP",
+        ActionRSVP: "Per favore, conferma la tua presenza cliccando il pulsante qui sotto! 👇🏻",
         fullName: "Nome e Cognome",
         inputFullName: "Inserisci il tuo nome e cognome",
         willYouAttend: "Parteciperai?",
@@ -92,7 +94,7 @@ const translations = {
         footer: "Grazie per essere parte del nostro giorno speciale!",
         // -----------------------------------------------------
         InviteHeader: "L'Avventura aspetta... E Anche Noi! 🌎",
-        InviteMessage: `Non vediamo l'ora di festeggiare con voi! Sia che siate vicini o lontani, la vostra presenza farà la differenza. <br>
+        InviteMessage: `Non vediamo l'ora di festeggiare con voi! Sia che siate vicini o lontani, la vostra presenza farà la differenza! <br>
                         Segnate la data — non sarà lo stesso senza di voi!`,
         // -----------------------------------------------------
         headerTravel: "Informazioni Utili per il Viaggio ✈️",
@@ -126,7 +128,7 @@ const translations = {
             - <strong>Bougatsa:</strong> Sfoglia ripiena di crema dolce di semolino o salata con formaggio e/o carne macinata. <br>
             - <strong>Koulouri:</strong> Ciambella di pane ricoperta di semi di sesamo, venduta nei panifici e per strada. <br>
             - <strong>Souvlaki:</strong> Spiedini di pollo o maiale con pomodoro, tzatziki, cipolla e patatine. <br>
-            - <strong>Gyros:</strong> Gyros autentico in pita con pomodoro, tzatziki, cipolla e patatine (Suggerimento dello sposo: chiedete Tirokafteri!). <br>
+            - <strong>Gyros:</strong> Gyros autentico in pita con pomodoro, cipolla e patatine (Suggerimento dello sposo: chiedete Tirokafteri!). <br>
             Per maggiori informazioni: <a href="https://www.discovergreece.com/it/travel-ideas/cover-story/foodie-guide-thessaloniki" target="_blank" class="text-decoration-underline">Clicca Qui</a>
         `,
         venueDetails: "Location del Matrimonio",
@@ -150,6 +152,7 @@ const translations = {
         flagClass: 'fi fi-gr', // Greek flag
         header: "Καλώς Ορίσατε στον Γάμο Μας",
         rsvpTitle: "Επιβεβαίωση Συμμετοχής",
+        ActionRSVP: "Παρακαλούμε επιβεβαιώστε την παρουσία σας κάνοντας κλικ στο κουμπί παρακάτω! 👇🏻",
         fullName: "Ονοματεπώνυμο",
         inputFullName: "Συμπληρώστε το ονοματεπώνυμό σας",
         willYouAttend: "Θα παραβρεθείτε;",
@@ -165,7 +168,7 @@ const translations = {
         footer: "Σας ευχαριστούμε που είστε μέρος της ξεχωριστής μας μέρας!",
         // -----------------------------------------------------
         InviteHeader: "Η Περιπέτεια Περιμένει... Και Εμείς Επίσης!🌎",
-        InviteMessage: `Ανυπομονούμε να γιορτάσουμε μαζί σας! Είτε είστε κοντά είτε μακριά, η παρουσία σας κάνει τη διαφορά. <br>
+        InviteMessage: `Ανυπομονούμε να γιορτάσουμε μαζί σας! Είτε είστε κοντά είτε μακριά, η παρουσία σας θα κάνει τη διαφορά! <br>
                         Κρατήστε την ημερομηνία — δεν θα είναι το ίδιο χωρίς εσάς!`,
         // -----------------------------------------------------
         headerTravel: "Χρήσιμες Πληροφορίες Μετακίνησης ✈️",
@@ -174,7 +177,7 @@ const translations = {
         gettingToCity: "Μετακίνηση στην Πόλη",
         gettingToCityDescription: `
            - <strong>Ενοικίαση Αυτοκινήτου:</strong> Διαθέσιμες online υπηρεσίες (π.χ. Booking.com) και στον περιβάλλοντα χώρο του αεροδρομίου. Προνοητική κράτηση εγγυάται καλύτερες τιμές. <br>
-           - <strong>Ταξί:</strong> Ευρέως διαθέσιμα στην πόλη. Για ευκολία, προτείνουμε την εφαρμογή <strong>FREE NOW</strong> ή <strong>Uber</strong>. Τα επίσημα ταξί αναγνωρίζονται από το μπλε χρώμα τους. <br>
+           - <strong>Ταξί:</strong> Υπάρχουν διαθέσιμα ταξί σε κάθε σημείο της πόλης. Για ευκολία, προτείνουμε την εφαρμογή <strong>FREE NOW</strong> ή <strong>Uber</strong>. Τα επίσημα ταξί αναγνωρίζονται από το μπλε χρώμα τους. <br>
            - <strong>Λεωφορείο:</strong> Η γραμμή 01X συνδέει το αεροδρόμιο με το κέντρο της πόλης με κόστος <strong>€2</strong>.
         `,
         accommodations: "Επιλογές Διαμονής",
@@ -199,7 +202,7 @@ const translations = {
             - <strong>Μπουγάτσα:</strong> Σφολιάτα γεμιστή με γλυκό κρέμα σιμιγδάλι ή αλμυρή με τυρί ή κιμά. <br>
             - <strong>Κουλούρι:</strong> Δαχτυλίδι ψωμιού καλυμμένο με σουσάμι, πωλείται σε φούρνους και πεζοδρόμια. <br>
             - <strong>Σουβλάκι:</strong> Κομματάκια κοτόπουλο ή χοιρινό με ντομάτα, τζατζίκι, κρεμμύδι και πατάτες. <br>
-            - <strong>Γύρος:</strong> Αυθεντικός γύρος σε πίτα με ντομάτα, τζατζίκι, κρεμμύδι και πατάτες (Πρόταση, γαμπρού: ζητήστε Τυροκαυτερή!). <br>
+            - <strong>Γύρος:</strong> Αυθεντικός γύρος σε πίτα με ντομάτα, κρεμμύδι και πατάτες (Πρόταση, γαμπρού: ζητήστε Τυροκαυτερή!). <br>
             Περισσότερες πληροφορίες: <a href="https://www.discovergreece.com/travel-ideas/cover-story/foodie-guide-thessaloniki" target="_blank" class="text-decoration-underline">Κάντε Κλικ Εδώ</a>
         `,
         venueDetails: "Χώρος Γάμου",
@@ -207,7 +210,7 @@ const translations = {
             <strong>Κτήμα Μυρωνίδη</strong> είναι ο χώρος του γάμου, κοντά στο αεροδρόμιο για τη διευκόλυνσή σας. Απολαύστε ένα γαλήνιο και γραφικό περιβάλλον για τη μεγάλη μέρα!
         `,
         giftHeader: "Δώρα; Μην Ανησυχείτε!",
-        giftMainMessage: "Η παρουσία σας στον γάμο μας είναι το μεγαλύτερο δώρο απ' όλα. Αν θέλετε να μας προσφέρετε ένα δώρο, θα μας χαροποιούσε ιδιαίτερα μια συνεισφορά για το ταξίδι του ονείρου μας στον μήνα του μέλιτος. ✈️",
+        giftMainMessage: "Η παρουσία σας στον γάμο μας είναι το πιο πολύτιμο δώρο για εμάς. Αν όμως επιθυμείτε να προσφέρετε κάτι επιπλέον, θα μας χαροποιούσε ιδιαίτερα μια συνεισφορά για το ταξίδι των ονείρων μας στον μήνα του μέλιτος. ✈️",
         giftThankYou: "Ανυπομονούμε να γιορτάσουμε την ημέρα του γάμου μας μαζί σας! ❤️",
         faq1: "Τι ώρα ξεκινά η τελετή;",
         faq1answer: `Η τελετή θα ξεκινήσει στις <strong> 20:00 </strong>. Παρακαλούμε να φτάσετε νωρίτερα, από τις 19:30.`,
