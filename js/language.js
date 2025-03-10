@@ -10,7 +10,7 @@ const translations = {
         willYouAttend: "Will you attend?",
         Data: "Saturday, 20 September 2025",
         PartyHeader: "Days left before the party 🎉",
-        VanueHeader: "The Venue",
+        venueHeader: "The Venue",
         yes: "Yes",
         no: "No",
         guestCount: "How many additional guests will be attending with you?",
@@ -35,10 +35,10 @@ const translations = {
         accommodations: "Accommodation Options",
         accommodationsDescription: `
             <strong>Hotels Near the Venue:</strong> <br>
-            - <a href="https://www.avalonhotel.gr/" target="_blank" class="text-decoration-underline">Avalon Hotel Thessaloniki</a>: Located 3 km from the airport and 10 minutes walk from the vanue. <br>
-            - <a href="https://airhotelathina.gr" target="_blank" class="text-decoration-underline">Athina Airport Hotel</a>: Located 5 minutes walking distance from the vanue. <br>
-            - <a href="https://irishotel.net" target="_blank" class="text-decoration-underline">Iris Hotel</a>: Located 8 minutes walk from the vanue. <br>
-            - <a href="https://www.hyatt.com/hyatt-regency/en-US/thess-hyatt-regency-thessaloniki/" target="_blank" class="text-decoration-underline">Hyatt Regency Hotel</a>: Located near the airport at 3 km from the vanue. Groom and Bride's residence.
+            - <a href="https://www.avalonhotel.gr/" target="_blank" class="text-decoration-underline">Avalon Hotel Thessaloniki</a>: Located 3 km from the airport and 10 minutes walk from the venue. <br>
+            - <a href="https://airhotelathina.gr" target="_blank" class="text-decoration-underline">Athina Airport Hotel</a>: Located 5 minutes walking distance from the venue. <br>
+            - <a href="https://irishotel.net" target="_blank" class="text-decoration-underline">Iris Hotel</a>: Located 8 minutes walk from the venue. <br>
+            - <a href="https://www.hyatt.com/hyatt-regency/en-US/thess-hyatt-regency-thessaloniki/" target="_blank" class="text-decoration-underline">Hyatt Regency Hotel</a>: Located near the airport at 3 km from the venue. Groom and Bride's residence.
         `,
         thingsToDo: "Things to Do",
         thingsToDoDescription: `
@@ -62,7 +62,7 @@ const translations = {
             <strong>Ktima Mironidi</strong> is the wedding venue, located near the airport for your convenience. Enjoy a tranquil and scenic location for the big day!
         `,
         giftHeader: "Gift? Don't Panic!",
-        giftMainMessage: "Your presence at our wedding is the greatest gift of all. If it is your wish to bless us with a gift, we would greatly appreciate a contribution for our dream honeymoon destination. ✈️",
+        giftMainMessage: "Your presence at our wedding will be the greatest gift of all. If it is your wish to bless us with a gift, we would greatly appreciate any contribution for our dream honeymoon destination. ✈️",
         giftThankYou: "We look forward to celebrating our wedding day with you! ❤️",
         faq1: "What time does the ceremony start?",
         faq1answer: `The ceremony will begin at <string> 20:00 </string>. Kindly arrive earlier, starting from 19:30.`,
@@ -84,7 +84,7 @@ const translations = {
         willYouAttend: "Parteciperai?",
         Data: "Sabato, 20 Settembre 2025",
         PartyHeader: "Giorni rimanenti alla festa 🎉",
-        VanueHeader: "La Location",
+        venueHeader: "La Location",
         yes: "Sì",
         no: "No",
         guestCount: "Quanti ospiti aggiuntivi verranno con te?",
@@ -158,7 +158,7 @@ const translations = {
         willYouAttend: "Θα παραβρεθείτε;",
         Data: "Σάββατο, 20 Σεπτεμβρίου 2025",
         PartyHeader: "Μέρες που απομένουν μέχρι το πάρτι 🎉",
-        VanueHeader: "Η τοποθεσία",
+        venueHeader: "Η τοποθεσία",
         yes: "Ναι",
         no: "Όχι",
         guestCount: "Πόσοι επιπλέον καλεσμένοι θα σας συνοδεύουν;",
