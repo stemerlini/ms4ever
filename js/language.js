@@ -38,7 +38,7 @@ const translations = {
             - <a href="https://www.avalonhotel.gr/" target="_blank" class="text-decoration-underline">Avalon Hotel Thessaloniki</a>: Located 3 km from the airport and 10 minutes walk from the venue. <br>
             - <a href="https://airhotelathina.gr" target="_blank" class="text-decoration-underline">Athina Airport Hotel</a>: Located 5 minutes walking distance from the venue. <br>
             - <a href="https://irishotel.net" target="_blank" class="text-decoration-underline">Iris Hotel</a>: Located 8 minutes walk from the venue. <br>
-            - <a href="https://www.hyatt.com/hyatt-regency/en-US/thess-hyatt-regency-thessaloniki/" target="_blank" class="text-decoration-underline">Hyatt Regency Hotel</a>: Located near the airport at 3 km from the venue. Groom and Bride's residence.
+            - <a href="https://www.hotelbrain.com/hotels-in-thessaloniki/september-hotel-thessaloniki" target="_blank" class="text-decoration-underline">September Hotel Thessaloniki</a>: Located near the airport at 10 km from the venue. Groom and Bride's residence.
         `,
         thingsToDo: "Things to Do",
         thingsToDoDescription: `
@@ -112,7 +112,7 @@ const translations = {
             - <a href="https://www.avalonhotel.gr/" target="_blank" class="text-decoration-underline">Avalon Hotel Salonicco</a>: 3 km dall'aeroporto e 10 minuti a piedi dalla location. <br>
             - <a href="https://airhotelathina.gr" target="_blank" class="text-decoration-underline">Athina Airport Hotel</a>: 5 minuti a piedi dalla location. <br>
             - <a href="https://irishotel.net" target="_blank" class="text-decoration-underline">Iris Hotel</a>: 8 minuti a piedi dalla location. <br>
-            - <a href="https://www.hyatt.com/hyatt-regency/en-US/thess-hyatt-regency-thessaloniki/" target="_blank" class="text-decoration-underline">Hyatt Regency Hotel</a>: 3 km dall'aeroporto. Residenza degli sposi.
+            - <a href="https://www.hotelbrain.com/hotels-in-thessaloniki/september-hotel-thessaloniki" target="_blank" class="text-decoration-underline"> September Hotel Thessaloniki </a>: 3 km dall'aeroporto. Residenza degli sposi.
         `,
         thingsToDo: "Cose da Fare",
         thingsToDoDescription: `
@@ -186,7 +186,7 @@ const translations = {
             - <a href="https://www.avalonhotel.gr/" target="_blank" class="text-decoration-underline">Avalon Hotel Θεσσαλονίκης</a>: 3 χλμ από το αεροδρόμιο και 10 λεπτά με τα πόδια από το κτήμα. <br>
             - <a href="https://airhotelathina.gr" target="_blank" class="text-decoration-underline">Athina Airport Hotel</a>: 5 λεπτά με τα πόδια από το κτήμα. <br>
             - <a href="https://irishotel.net" target="_blank" class="text-decoration-underline">Iris Hotel</a>: 8 λεπτά με τα πόδια από το κτήμα. <br>
-            - <a href="https://www.hyatt.com/hyatt-regency/en-US/thess-hyatt-regency-thessaloniki/" target="_blank" class="text-decoration-underline">Hyatt Regency Hotel</a>: 3 χλμ από το αεροδρόμιο. Διαμονή νύφης και γαμπρού.
+            - <a href="https://www.hotelbrain.com/hotels-in-thessaloniki/september-hotel-thessaloniki" target="_blank" class="text-decoration-underline">September Hotel Thessaloniki</a>: 10 χλμ από το αεροδρόμιο. Διαμονή νύφης και γαμπρού.
         `,
         thingsToDo: "Αξιοθέατα & Δραστηριότητες",
         thingsToDoDescription: `
